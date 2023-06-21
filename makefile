@@ -6,7 +6,7 @@
 #    By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/21 09:00:17 by ioduwole          #+#    #+#              #
-#    Updated: 2023/06/21 09:00:45 by ioduwole         ###   ########.fr        #
+#    Updated: 2023/06/21 17:46:47 by ioduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ CC  =  gcc
 
 CFLAGS = -Werror -Wall -Wextra
 
-RD_LIB = -lreadline
+//Copy readline library into this path so there's no conflict in compilation
+RD_LIB = -I/usr/local/Cellar/readline/8.1.2/include -L/usr/local/Cellar/readline/8.1.2/lib -lreadline
 
 LIB_DIR = ./libft/
 
