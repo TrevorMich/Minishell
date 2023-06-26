@@ -266,3 +266,61 @@ Here are some commonly used flags for the `flags` parameter:
 * `O_CREAT`: Create a new file if it doesn't exist.
 * `O_TRUNC`: Truncate the file to zero length if it exists.
 * `O_APPEND`: Append data to the end of the file.
+
+**-------opendir/readdir/closedir----------------**
+
+The `opendir()` function in C is used to open a directory and obtain a directory stream, which is a pointer to a structure containing information about the directory's contents.
+
+    ***DIR *opendir(const char *name);***
+
+    struct dirent
+	{
+		ino_t          d_ino;       /* inode number*/
+		off_t          d_off;       /* offset to the next dirent*/
+		unsigned short d_reclen;    /* length of this record*/
+		unsigned char  d_type;      /* type of file; not supported by all file system 		    types*/
+		char           d_name[256]; /* filename */
+	};
+
+The `opendir()` function takes one parameter:
+
+* `name`: A pointer to a null-terminated string that specifies the name of the directory you want to open.
+
+The function returns a pointer to a `DIR` structure on success, which represents the directory stream, or `NULL` if an error occurs. The error can be determined by checking the value of the global variable `errno`.
+
+The `DIR` structure contains implementation-specific details about the directory stream. It typically includes a file descriptor, the current position within the directory, and other internal data. You don't have direct access to the members of this structure; instead, you use it with other directory-related functions.
+
+Once you have opened a directory using `opendir()`, you can use other functions like `readdir()` and `closedir()` to retrieve the contents of the directory and close the directory stream, respectively.
+
+The `opendir()` function takes one parameter:
+
+* `name`: A pointer to a null-terminated string that specifies the name of the directory you want to open.
+
+The function returns a pointer to a `DIR` structure on success, which represents the directory stream, or `NULL` if an error occurs. The error can be determined by checking the value of the global variable `errno`.
+
+The `DIR` structure contains implementation-specific details about the directory stream. It typically includes a file descriptor, the current position within the directory, and other internal data. You don't have direct access to the members of this structure; instead, you use it with other directory-related functions.
+
+Once you have opened a directory using `opendir()`, you can use other functions like `readdir()` and `closedir()` to retrieve the contents of the directory and close the directory stream, respectively.
+
+The `opendir()` function takes one parameter:
+
+* `name`: A pointer to a null-terminated string that specifies the name of the directory you want to open.
+
+The function returns a pointer to a `DIR` structure on success, which represents the directory stream, or `NULL` if an error occurs. The error can be determined by checking the value of the global variable `errno`.
+
+The `DIR` structure contains implementation-specific details about the directory stream. It typically includes a file descriptor, the current position within the directory, and other internal data. You don't have direct access to the members of this structure; instead, you use it with other directory-related functions.
+
+Once you have opened a directory using `opendir()`, you can use other functions like `readdir()` and `closedir()` to retrieve the contents of the directory and close the directory stream, respectively.
+
+The `opendir()` function takes one parameter:
+
+* `name`: A pointer to a null-terminated string that specifies the name of the directory you want to open.
+
+The function returns a pointer to a `DIR` structure on success, which represents the directory stream, or `NULL` if an error occurs. The error can be determined by checking the value of the global variable `errno`.
+
+The `DIR` structure contains implementation-specific details about the directory stream. It typically includes a file descriptor, the current position within the directory, and other internal data. You don't have direct access to the members of this structure; instead, you use it with other directory-related functions.
+
+Once you have opened a directory using `opendir()`, you can use other functions like `readdir()` and `closedir()` to retrieve the contents of the directory and close the directory stream, respectively.
+
+
+**--------isatty-------------**
