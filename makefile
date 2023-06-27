@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+         #
+#    By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/21 09:00:17 by ioduwole          #+#    #+#              #
-#    Updated: 2023/06/21 17:55:26 by ioduwole         ###   ########.fr        #
+#    Updated: 2023/06/27 13:51:43 by doduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,12 @@ CC  =  gcc
 
 CFLAGS = -Werror -Wall -Wextra
 
-RD_LIB = -I/usr/local/Cellar/readline/8.1.2/include -L/usr/local/Cellar/readline/8.1.2/lib -lreadline
+ifeq ($(PLATFORM),macOS-arm64)
+    RD_LIB = -I/opt/homebrew/opt/readline/include -L/opt/homebrew/opt/readline/lib
+endif
+ifeq ($(PLATFORM),macOS-x86_64)
+    RD_LIB = -I/usr/local/Cellar/readline/8.1.2/include -L/usr/local/Cellar/readline/8.1.2/lib -lreadline
+endif
 
 LIB_DIR = ./libft/
 
