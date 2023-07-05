@@ -6,7 +6,7 @@
 #    By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/21 09:00:17 by ioduwole          #+#    #+#              #
-#    Updated: 2023/07/05 17:49:12 by doduwole         ###   ########.fr        #
+#    Updated: 2023/07/05 21:36:26 by doduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,9 +27,9 @@ ifeq ($(UNAME),x86_64)
     RD_LIB = -I/usr/local/Cellar/readline/8.1.2/include -L/usr/local/Cellar/readline/8.1.2/lib -lreadline
 endif
 
-LIB_DIR = ./libft/
+LIB_DIR = ./includes/libft/
 
-LIBFT	= ./libft/libft.a
+LIBFT	= $(LIB_DIR)/libft.a
 
 all: $(NAME)
 
