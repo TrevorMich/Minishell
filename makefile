@@ -6,21 +6,19 @@
 #    By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/21 09:00:17 by ioduwole          #+#    #+#              #
-#    Updated: 2023/06/27 16:16:42 by doduwole         ###   ########.fr        #
+#    Updated: 2023/07/05 17:49:12 by doduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = minishell
 
-SRC =	*.c
+SRC =	$(wildcard *.c) $(wildcard */*.c) $(wildcard */*/*.c)
 		
 CC  =  gcc
 
-CFLAGS = -Werror -Wall -Wextra
+CFLAGS = -Wall -Wextra -Werror 
 
 UNAME := $(shell uname -m)
-
-$(info Makefile for $(UNAME)...)
 
 ifeq ($(UNAME),arm64)
     RD_LIB = -I/opt/homebrew/opt/readline/include -L/opt/homebrew/opt/readline/lib -lreadline
@@ -36,10 +34,11 @@ LIBFT	= ./libft/libft.a
 all: $(NAME)
 
 $(NAME): $(SRC) $(LIBFT)
-		$(CC) $(CFLAGS) $(RD_LIB) $(SRC) $(LIBFT) -o $(NAME)
+		$(CC) $(CFLAGS) $(RD_LIB) $? -o $@
 
 $(LIBFT):
-	@make -C $(LIB_DIR)
+	@make all -C $(LIB_DIR)
+	@make clean -C ${LIB_DIR}
 
 clean:
 	@make clean -C $(LIB_DIR)
