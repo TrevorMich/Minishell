@@ -3,16 +3,18 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+         #
+#    By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/21 09:00:17 by ioduwole          #+#    #+#              #
-#    Updated: 2023/07/10 11:45:34 by ioduwole         ###   ########.fr        #
+#    Updated: 2023/07/10 14:38:51 by doduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = minishell
 
-SRC =	$(wildcard *.c) $(wildcard */*.c) $(wildcard */*/*.c) $(wildcard */*/*/*.c) 
+# SRC =	$(wildcard *.c) $(wildcard */*.c) $(wildcard */*/*.c) $(wildcard */*/*/*.c) 
+
+SRC := $(wildcard *.c */*.c */*/*.c */*/*/*.c)
 
 CC  =  gcc
 
