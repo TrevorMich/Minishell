@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 08:55:36 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/10 11:42:15 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/10 19:36:21 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int	main(int argc, char **argv, char **envp)
 
 void	minishell(t_data *data)
 {
+	t_cmdgroup *group;
+	group = ft_calloc(1, sizeof(t_cmdgroup));
 	while (1)
 	{
 		data->input = readline("Minishell$: "); //Collect input from user
@@ -38,16 +40,17 @@ void	minishell(t_data *data)
 			free_all(data);
 			exit(0);
 		}
+		group->cmd = ft_split(data->input, ' ');
 		if (ft_strlen(data->input) > 0)
 		{
 			add_history(data->input);
 			// exec_minishell(data);
 			if (!ft_strcmp(data->input, "pwd"))
 				pwd();
-			if (!ft_strcmp(data->input, "env"))
-				do_env(data, &data->input);
-			if (!ft_strcmp(data->input, "cd"))
-				cd(data, &data->input);
+			if (!ft_strcmp(group->cmd[0], "env"))
+				do_env(data, group->cmd);
+			if (!ft_strcmp(group->cmd[0], "cd"))
+				cd(data, group->cmd);
 			// free(data->input);
 		}
 		else
@@ -64,4 +67,3 @@ int	exec_minishell(t_data *data)
 
 	return (0);
 }
-
