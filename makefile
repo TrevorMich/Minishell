@@ -6,19 +6,24 @@
 #    By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/21 09:00:17 by ioduwole          #+#    #+#              #
-#    Updated: 2023/07/10 14:38:51 by doduwole         ###   ########.fr        #
+#    Updated: 2023/07/10 18:37:34 by doduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = minishell
 
-# SRC =	$(wildcard *.c) $(wildcard */*.c) $(wildcard */*/*.c) $(wildcard */*/*/*.c) 
-
 SRC := $(wildcard *.c */*.c */*/*.c */*/*/*.c)
 
 CC  =  gcc
 
-CFLAGS = -Wall -Wextra -Werror 
+RM = rm -rf
+
+CFLAGS = -Wall -Wextra -Werror
+
+NONE='\033[0m'
+GREEN='\033[32m'
+GRAY='\033[2;37m'
+CURSIVE='\033[3m'
 
 UNAME := $(shell uname -m)
 
@@ -36,17 +41,21 @@ LIBFT	= ./includes/libft/libft.a
 all: $(NAME)
 
 $(NAME): $(SRC) $(LIBFT)
-		$(CC) $(CFLAGS) $(RD_LIB) $? -o $@
+	@$(CC) $(CFLAGS) $(RD_LIB) $(SRC) $(LIBFT) -o $@
+	@echo $(GREEN)"- Compiled -"$(NONE)
 
 $(LIBFT):
 	@make all -C $(LIB_DIR)
 	@make clean -C ${LIB_DIR}
 
 clean:
-	@make clean -C $(LIB_DIR)
+	@echo $(CURSIVE)$(GRAY) "     - Removing object files..." $(NONE)
+	@$(MAKE) -C $(LIB_DIR) fclean
 
 fclean: clean
-	@make fclean -C $(LIB_DIR)
-	@rm -rf $(NAME)
+	@echo $(CURSIVE)$(GRAY) "     - Removing $(NAME)..." $(NONE)
+	@$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
