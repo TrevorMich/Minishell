@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+         #
+#    By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/21 09:00:17 by ioduwole          #+#    #+#              #
-#    Updated: 2023/07/05 21:36:26 by doduwole         ###   ########.fr        #
+#    Updated: 2023/07/10 11:45:34 by ioduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = minishell
 
-SRC =	$(wildcard *.c) $(wildcard */*.c) $(wildcard */*/*.c)
-		
+SRC =	$(wildcard *.c) $(wildcard */*.c) $(wildcard */*/*.c) $(wildcard */*/*/*.c) 
+
 CC  =  gcc
 
 CFLAGS = -Wall -Wextra -Werror 
@@ -29,7 +29,7 @@ endif
 
 LIB_DIR = ./includes/libft/
 
-LIBFT	= $(LIB_DIR)/libft.a
+LIBFT	= ./includes/libft/libft.a
 
 all: $(NAME)
 
