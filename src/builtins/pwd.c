@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   pwd.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/03 18:49:50 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/03 20:44:06 by ioduwole         ###   ########.fr       */
+/*   Created: 2023/07/07 17:45:00 by ioduwole          #+#    #+#             */
+/*   Updated: 2023/07/07 18:30:54 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
 
-int	ft_strcmp(const char *s1, const char *s2)
+void	pwd(void)
 {
-	int	i;
+	char *str;
 
-	i = 0;
-	while (s1[i] && s1[i] == s2[i])
-		i++;
-	return (s1[i] - s2[i]);
+	str = ft_calloc(1000, sizeof(char));
+	printf("%s\n", getcwd(str, 100));
+	free(str);
 }
