@@ -6,11 +6,18 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 17:19:47 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/09 14:33:37 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/10 20:50:31 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
+
+void	cd(t_data *data, char **str)
+{
+	update_oldpwd(data);
+	if (array_length(str) == 1)
+		cd_to_home(data);
+}
 
 void	cd_to_home(t_data *data)
 {
@@ -28,13 +35,6 @@ void	cd_to_home(t_data *data)
 			printf("minishell: cd: %s\n", tmp->value);
 	}	
 	update_dir(data);
-}
-
-void	cd(t_data *data, char **str)
-{
-	update_oldpwd(data);
-	if (array_length(str) == 1)
-		cd_to_home(data);
 }
 
 void	update_dir(t_data *data)

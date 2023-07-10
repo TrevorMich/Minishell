@@ -3,14 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2023/07/10 11:54:07 by ioduwole         ###   ########.fr       */
-=======
-/*   Updated: 2023/07/10 14:33:48 by doduwole         ###   ########.fr       */
->>>>>>> 874189b56cd7322db34ec760604ab4ed86a493c8
+/*   Updated: 2023/07/10 20:50:29 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +45,7 @@ t_env	*find_path(t_data *data);
 char	*get_current_dir(void);
 void	do_env(t_data *data, char **str);
 void	cd(t_data *data, char **str);
+void	cd_to_home(t_data *data);
 void	update_oldpwd(t_data *data);
 void	update_env_value(t_env *list, char *var, char *new_value);
 void	add_path(t_cmdgroup *group, char **path);

@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 08:55:36 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/10 19:44:29 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/10 20:59:33 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int argc, char **argv, char **envp)
 		return (1);
 	data = ft_calloc(1, sizeof(t_data)); //Allocated memory for data struct
 	create_env_list(data, envp); //check israel_README
-	get_path(data); 
+	// get_path(data);
 	minishell(data);
 	return (0);
 }
@@ -38,9 +38,9 @@ void	minishell(t_data *data)
 			free_all(data);
 			exit(0);
 		}
-		group->cmd = ft_split(data->input, ' ');
 		if (ft_strlen(data->input) > 0)
 		{
+			group->cmd = ft_split(data->input, ' ');
 			add_history(data->input);
 			// exec_minishell(data);
 			if (!ft_strcmp(data->input, "pwd"))
@@ -48,7 +48,12 @@ void	minishell(t_data *data)
 			if (!ft_strcmp(group->cmd[0], "env"))
 				do_env(data, group->cmd);
 			if (!ft_strcmp(group->cmd[0], "cd"))
-				cd(data, group->cmd);
+			{
+				if (array_length(group->cmd) == 1)
+					cd_to_home(data);
+				else if(array_length(group->cmd) > 1)
+					cd(data, &group->cmd[1]);
+			}
 			// free(data->input);
 		}
 		else
