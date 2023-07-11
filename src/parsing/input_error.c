@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   input_error.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 16:28:27 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/10 11:45:57 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/10 20:01:32 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
+
+// [🔴] check if str is only spaces
+// [🔴] check mismatched quotations
+// [🔴] check pipe related error
+// [🔴] check unsupported special char
+// [🔴] check re-directions positioning
+// [🔴] check unsupported special char
+// [🔴] check unsupported special char
 
 int	input_error(t_data *data)
 {
