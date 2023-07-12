@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 16:28:27 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/12 15:50:41 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/12 16:20:16 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,17 @@
 // cat < ls
 // exec 5<> file
 // ps -ef | grep systemd | awk '{ print $2 }'
+// ls * | sort > file
+// ls -la | grep a | tr 'a-z' 'A-Z'
+// 
+// cat << EOF > file
+// cat file
+// rm file
+// 
+// ls | rev > file
+// cat file
+// rev file | cat
+// rm file
 
 int	input_error(t_data *data)
 {

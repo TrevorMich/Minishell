@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 08:55:36 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/11 12:57:14 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/12 16:50:05 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	minishell(t_data *data)
 {
 	while (1)
 	{
-		data->input = readline("Minishell$: "); //Collect input from user
+		data->input = readline("\033[1;34m""minishell$: ""\033[0m"); //Collect input from user
 		if (!data->input)
 		{
 			write(1, "exit\n", 5);
