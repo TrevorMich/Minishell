@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 08:55:36 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/10 19:29:05 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/11 12:57:14 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	minishell(t_data *data)
 		if (ft_strlen(data->input) > 0)
 		{
 			add_history(data->input);
-			// exec_minishell(data);
+			exec_minishell(data);
 			if (!ft_strcmp(data->input, "pwd"))
 				pwd();
 			if (!ft_strcmp(data->input, "env"))
@@ -55,7 +55,7 @@ void	minishell(t_data *data)
 
 int	exec_minishell(t_data *data)
 {
-	if (ft_strncmp(data->input, "exit", 4) && ft_strlen(data->input) == 4)
+	if (!ft_strcmp(data->input, "exit"))
 		free_all(data);
 	if (input_error(data) == -1)
 		return (-1);

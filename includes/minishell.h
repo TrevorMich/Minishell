@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/10 14:33:48 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/12 10:39:27 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,12 @@ void	get_path(t_data *data);
 int		array_length(char **arr);
 int		input_error(t_data *data);
 int		space_err(char *input);
+int		quote_err(char *input);
+int		pipe_err(char *input);
+int		special_char_err(char *input);
+int		exec_minishell(t_data *data);
+void	print_err(char *err_msg, char *str);
+int		skip_spaces(char *input);
+int		skip_quotes(char *input);
 
 #endif
