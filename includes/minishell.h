@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/12 10:39:27 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/12 15:26:24 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ char	*ft_strjoin2(char const *s1, char const *s2, char c);
 t_env	*find_path(t_data *data);
 char	*get_current_dir(void);
 void	do_env(t_data *data, char **str);
-void	cd(t_data *data, char **str);
 void	update_oldpwd(t_data *data);
 void	update_env_value(t_env *list, char *var, char *new_value);
 void	add_path(t_cmdgroup *group, char **path);
@@ -56,16 +55,31 @@ void	insert_last(t_data *data, char *envp);
 void	ft_env(t_data *data, char **str);
 int		ft_strcmp(const char *s1, const char *s2);
 void	free_all(t_data *data);
-void	pwd(void);
 void	get_path(t_data *data);
 int		array_length(char **arr);
+int		exec_minishell(t_data *data);
+/**
+ * BUILTINS
+*/
+void	cd(t_data *data, char **str);
+void	pwd(void);
+/**
+ * INPUT ERRORS
+*/
 int		input_error(t_data *data);
 int		space_err(char *input);
 int		quote_err(char *input);
 int		pipe_err(char *input);
 int		special_char_err(char *input);
-int		exec_minishell(t_data *data);
+int		redirection_err(char *input);
+int		redir_type_err(char *s, int *i, char *redir_type, int skip_num);
+/**
+ * PRINT ERROR
+*/
 void	print_err(char *err_msg, char *str);
+/**
+ * SKIPS
+*/
 int		skip_spaces(char *input);
 int		skip_quotes(char *input);
 

@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 16:39:04 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/12 10:55:40 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/12 15:24:24 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,29 +102,29 @@ int	special_char_err(char *input)
 	return (0);
 }
 
-// int	redirection_err(char *input)
-// {
-// 	int	i;
-// 	int	value;
+int	redirection_err(char *input)
+{
+	int	i;
+	int	value;
 
-// 	i = 0;
-// 	value = 0;
-// 	while (input[i] != '\0' && value != -1)
-// 	{
-// 		if (input[i] == '\'' || input[i] == '"')
-// 			i += skip_quotes(&input[i]);
-// 		else if (input[i] == '<' && input[i + 1] != '<')
-// 			value = redirection_err_s_in(input, &i);
-// 		else if (input[i] == '>' && input[i + 1] != '>')
-// 			value = redirection_err_s_out(input, &i);
-// 		else if (input[i] == '<' && input[i + 1] == '<')
-// 			value = redirection_err_d_in(input, &i);
-// 		else if (input[i] == '>' && input[i + 1] == '>')
-// 			value = redirection_err_d_out(input, &i);
-// 		else
-// 			i++;
-// 	}
-// 	if (value == -1)
-// 		return (-1);
-// 	return (0);
-// }
+	i = 0;
+	value = 0;
+	while (input[i] != '\0' && value != -1)
+	{
+		if (input[i] == '\'' || input[i] == '"')
+			i += skip_quotes(&input[i]);
+		else if (input[i] == '<' && input[i + 1] != '<')
+			value = redir_type_err(input, &i, "<", 1);
+		else if (input[i] == '>' && input[i + 1] != '>')
+			value = redir_type_err(input, &i, ">", 1);
+		else if (input[i] == '<' && input[i + 1] == '<')
+			value = redir_type_err(input, &i, "<<", 2);
+		else if (input[i] == '>' && input[i + 1] == '>')
+			value = redir_type_err(input, &i, ">>", 2);
+		else
+			i++;
+	}
+	if (value == -1)
+		return (-1);
+	return (0);
+}
