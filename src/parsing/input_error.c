@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 16:28:27 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/12 16:20:16 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/12 17:13:24 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,9 @@
 // cat file
 // rev file | cat
 // rm file
+//
+// read a b <<< "Sysadmin Enable"
+// echo $b <-> $a 
 
 int	input_error(t_data *data)
 {
