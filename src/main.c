@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 08:55:36 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/10 20:59:33 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/13 17:34:07 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	minishell(t_data *data)
 	group = ft_calloc(1, sizeof(t_cmdgroup));
 	while (1)
 	{
-		data->input = readline("Minishell$: "); //Collect input from user
+		data->input = readline("\033[1;34m""minishell$: ""\033[0m"); //Collect input from user
 		if (!data->input)
 		{
 			write(1, "exit\n", 5);
@@ -42,7 +42,7 @@ void	minishell(t_data *data)
 		{
 			group->cmd = ft_split(data->input, ' ');
 			add_history(data->input);
-			// exec_minishell(data);
+			exec_minishell(data);
 			if (!ft_strcmp(data->input, "pwd"))
 				pwd();
 			if (!ft_strcmp(group->cmd[0], "env"))
@@ -63,7 +63,7 @@ void	minishell(t_data *data)
 
 int	exec_minishell(t_data *data)
 {
-	if (ft_strncmp(data->input, "exit", 4) && ft_strlen(data->input) == 4)
+	if (!ft_strcmp(data->input, "exit"))
 		free_all(data);
 	if (input_error(data) == -1)
 		return (-1);

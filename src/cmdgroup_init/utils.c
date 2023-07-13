@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 18:49:50 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/09 00:16:42 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/11 09:48:22 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,6 @@ void	clear(char **str)
 	if (!str)
 		return ;
 	while (str[++i])
-		free(str[++i]);
+		free(str[i]);
 	free(str);
 }

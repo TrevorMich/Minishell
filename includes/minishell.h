@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/10 20:50:29 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/13 17:35:31 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,32 @@ void	insert_last(t_data *data, char *envp);
 void	ft_env(t_data *data, char **str);
 int		ft_strcmp(const char *s1, const char *s2);
 void	free_all(t_data *data);
-void	pwd(void);
 void	get_path(t_data *data);
 int		array_length(char **arr);
+int		exec_minishell(t_data *data);
+/**
+ * BUILTINS
+*/
+void	cd(t_data *data, char **str);
+void	pwd(void);
+/**
+ * INPUT ERRORS
+*/
 int		input_error(t_data *data);
 int		space_err(char *input);
+int		quote_err(char *input);
+int		pipe_err(char *input);
+int		special_char_err(char *input);
+int		redirection_err(char *input);
+int		redir_type_err(char *s, int *i, char *redir_type, int skip_num);
+/**
+ * PRINT ERROR
+*/
+void	print_err(char *err_msg, char *str);
+/**
+ * SKIPS
+*/
+int		skip_spaces(char *input);
+int		skip_quotes(char *input);
 
 #endif
