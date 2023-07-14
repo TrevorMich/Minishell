@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/13 17:35:31 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/14 21:37:59 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <readline/readline.h>
 # include <string.h>
 # include "libft/libft.h"
+# include "errno.h"
 
 typedef struct s_env //check israel_README
 {
@@ -42,19 +43,11 @@ typedef struct s_data //data struct
 
 char	*ft_strjoin2(char const *s1, char const *s2, char c);
 t_env	*find_path(t_data *data);
-char	*get_current_dir(void);
-void	do_env(t_data *data, char **str);
-void	cd(t_data *data, char **str);
-void	cd_to_home(t_data *data);
-void	update_oldpwd(t_data *data);
-void	update_env_value(t_env *list, char *var, char *new_value);
 void	add_path(t_cmdgroup *group, char **path);
-void	update_dir(t_data *data);
 void	minishell(t_data *data);
 void	clear(char **str);
 void	create_env_list(t_data *data, char **envp);
 void	insert_last(t_data *data, char *envp);
-void	ft_env(t_data *data, char **str);
 int		ft_strcmp(const char *s1, const char *s2);
 void	free_all(t_data *data);
 void	get_path(t_data *data);
@@ -63,7 +56,14 @@ int		exec_minishell(t_data *data);
 /**
  * BUILTINS
 */
+void	do_env(t_data *data, char **str);
+void	update_env_value(t_env *list, char *var, char *new_value);
+void	ft_env(t_data *data, char **str);
 void	cd(t_data *data, char **str);
+void	cd_to_home(t_data *data);
+char	*get_current_dir(void);
+void	update_dir(t_data *data);
+void	update_oldpwd(t_data *data);
 void	pwd(void);
 /**
  * INPUT ERRORS
