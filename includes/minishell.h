@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/14 21:37:59 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/14 21:48:08 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,18 @@ typedef struct s_data //data struct
 	t_cmdgroup	*cmdgroup;
 }	t_data;
 
+/**
+ * MINISHELL PROGRAM
+*/
+void	minishell(t_data *data);
+int		exec_minishell(t_data *data);
+
+/**
+ * UTILITIES
+*/
 char	*ft_strjoin2(char const *s1, char const *s2, char c);
 t_env	*find_path(t_data *data);
 void	add_path(t_cmdgroup *group, char **path);
-void	minishell(t_data *data);
 void	clear(char **str);
 void	create_env_list(t_data *data, char **envp);
 void	insert_last(t_data *data, char *envp);
@@ -52,7 +60,6 @@ int		ft_strcmp(const char *s1, const char *s2);
 void	free_all(t_data *data);
 void	get_path(t_data *data);
 int		array_length(char **arr);
-int		exec_minishell(t_data *data);
 /**
  * BUILTINS
 */
