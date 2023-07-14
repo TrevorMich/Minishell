@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/12 15:26:24 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/14 16:44:59 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,11 @@ int		exec_minishell(t_data *data);
 */
 void	cd(t_data *data, char **str);
 void	pwd(void);
+/**
+ * PARSER FUNCTIONS
+*/
+void	parser(t_data *data);
+void	remove_consecutive_quotes(char *input);
 /**
  * INPUT ERRORS
 */

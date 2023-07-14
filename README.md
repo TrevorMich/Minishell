@@ -324,3 +324,28 @@ Once you have opened a directory using `opendir()`, you can use other functions 
 
 
 **--------isatty-------------**
+
+### Minishell Operations
+
+	* Reads input from user's terminal
+	* Breaks the input into words and operators. These tokens are separated by metacharacters
+	* Parses the tokens into simple and compound commands
+	* Performs the various shell expansions, breaking the expanded tokens into lists of filenames and commands and arguments.
+	* Performs any necessary redirections  and removes the redirection operators and their operands from the argument list.
+	*Executes the command (see Executing Commands).
+	* Optionally waits for the command to complete and collects its exit status (see Exit Status).
+
+	Command is entered and if length is non-null, keep it in history.
+	Parsing : Parsing is the breaking up of commands into individual words and strings
+	Checking for special characters like pipes, etc is done
+	Checking if built-in commands are asked for. If pipes are present, handling pipes.
+	Executing system commands and libraries by forking a child and calling execvp.
+	Printing current directory name and asking for next input.
+
+#### Control Operators
+Includes the following symbols:
+`&   &&   (   )   ;   ;;   <newline>   |   ||`
+
+#### Redirection Operators
+`<     >     >|     <<     >>     <&     >&     <<-     <>`
+
