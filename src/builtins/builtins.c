@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 12:03:55 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/09 14:38:14 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/14 21:32:36 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,17 @@ int	isbuiltin(t_cmdgroup *group)
 	if (!group || !group->cmd[0])
 		return (0);
 	str = group->cmd;
-	if (!ft_strncmp(str[0], "cd", 2) && ft_strlen(str[0]) == 2)
+	if (!ft_strcmp(str[0], "cd"))
 		return (1);
-	if (!ft_strncmp(str[0], "export", 6) && ft_strlen(str[0]) == 6)
+	if (!ft_strcmp(str[0], "export"))
 		return (1);
-	if (!ft_strncmp(str[0], "echo", 4) && ft_strlen(str[0]) == 4)
+	if (!ft_strcmp(str[0], "echo"))
 		return (1);
-	if (!ft_strncmp(str[0], "pwd", 3) && ft_strlen(str[0]) == 3)
+	if (!ft_strcmp(str[0], "pwd"))
 		return (1);
-	if (!ft_strncmp(str[0], "env", 3) && ft_strlen(str[0]) == 3)
+	if (!ft_strcmp(str[0], "env"))
 		return (1);
-	if (!ft_strncmp(str[0], "unset", 5) && ft_strlen(str[0]) == 5)
+	if (!ft_strcmp(str[0], "unset"))
 		return (1);
 	return (0);
 }
