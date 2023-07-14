@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 16:19:51 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/14 19:55:43 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/14 23:40:59 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,27 @@
 
 void	remove_consecutive_quotes(char *input)
 {
-	int	i;
-	int	j;
-	int	open_quote;
+	int head;
+	int tail;
+	int open_quote;
 
-	i = 0;
-	j = 0;
+	head = 0;
+	tail = 0;
 	open_quote = 0;
-	while (input[i] != '\0')
+	while (input[head])
 	{
-		if (!open_quote && ((input[i] == '"' && input[i + 1] == '"')
-				|| (input[i] == '\'' && input[i + 1] == '\'')))
-					i += 2;
+		if (!open_quote && ((input[head] == '"' && input[head + 1] == '"')
+				|| (input[head] == '\'' && input[head + 1] == '\'')
+			))
+			head++;
 		else
 		{
-			if (input[i] == '"' || input[i] == '\'')
+			if (input[head] == '"' || input[head] == '\'')
 				open_quote = !open_quote;
-			input[j] = input[i];
-			i++;
-			j++;
+			input[tail] = input[head];
+			tail++;
 		}
+		head++;
 	}
-	input[j] = '\0';
+	input[tail] = '\0';
 }
