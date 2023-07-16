@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/14 21:48:08 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/15 10:43:07 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,9 @@ char	*get_current_dir(void);
 void	update_dir(t_data *data);
 void	update_oldpwd(t_data *data);
 void	pwd(void);
+int		do_unset(t_data *data, char **var);
+int		check_unset(char **var);
+void	free_var(t_env *ptr);
 /**
  * INPUT ERRORS
 */
