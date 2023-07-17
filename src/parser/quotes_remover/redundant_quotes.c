@@ -6,11 +6,11 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 16:19:51 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/14 23:40:59 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/16 14:45:23 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/minishell.h"
+#include "../../../includes/minishell.h"
 
 void	remove_consecutive_quotes(char *input)
 {

@@ -6,13 +6,14 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 16:28:27 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/14 16:42:19 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/17 12:37:11 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
 
 /// @brief test commands
+// "echo" dre
 // </dev/stdin tr -d 'e' | ls
 // cat | uname -a
 // echo "$(cat Makefile)"
