@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 08:47:23 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 09:10:51 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,14 @@ typedef struct s_cmdgroup
 
 }	t_cmdgroup;
 
-
+typedef struct s_token_args
+{
+	char *input; 
+	char type;
+	char in_or_out;
+	int i;
+	int len;
+} t_token_args;
 
 enum	e_token_types
 {
@@ -100,22 +107,36 @@ int		exec_minishell(t_data *data);
 void	cd(t_data *data, char **str);
 void	pwd(void);
 /**
- * PARSER FUNCTIONS
+ * PARSER ->
 */
 void	parser(t_data *data);
+/**
+ *  PARSER -> QUOTES_REMOVAL
+*/
 void	remove_consecutive_quotes(char *input);
-// token functions
+/**
+ * PARSER -> TOKENIZER -> INDEX
+*/
 void	tokenizer(t_token **token_lst, char *input);
+/**
+ * PARSER -> TOKENIZER -> HELPER
+*/
+t_token	*handle_words(char *s, int *i);
+int		pick_word(char *str, char *char_set);
+t_token	*handle_quotes(char *s, int *i);
+t_token	*handle_pipe_or_sep(char *s, int *i, char pipe_or_sep);
+t_token	*handle_single_rdr(char *s, int *i, char in_or_out);
+t_token	*handle_double_rdr(char *s, int *i, char in_or_out);
+/**
+ * PARSER -> TOKENIZER -> UTILS
+*/
 void	token_add_back(t_token **lst, t_token *new);
 t_token	*token_last(t_token *lst);
 void	remove_quotes(char *s);
-int		pick_word(char *str, char *possible_sep);
-t_token	*init_in_quotes(char *s, int *i);
-t_token	*init_pipe_or_sep(char *s, int *i, char pipe_or_sep);
-t_token	*init_single_redirection(char *s, int *i, char in_or_out);
-t_token	*init_double_redirection(char *s, int *i, char in_or_out);
+/**
+ * PARSER -> EXPANSION
+*/
 void	expand_token_lst(t_data *data);
-t_token	*init_word(char *s, int *i);
 char	*expand_token(char *token, t_data *data);
 void	process_expansion(char *token, t_data *data, t_idx *idx, char **exp);
 int	dollar_in_str(char *s);

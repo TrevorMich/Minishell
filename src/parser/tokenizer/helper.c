@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 08:45:46 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 08:48:11 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 09:02:15 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 // echo < readme, echo < readme, echo < readme
 
 
-t_token *set_token(char *input, char type, int *i, int len, char in_or_out)
+t_token *set_token(char *input, char type, int i, int len, char in_or_out)
 {
 	t_token	*token;
 
@@ -29,7 +29,7 @@ t_token *set_token(char *input, char type, int *i, int len, char in_or_out)
 		// g_exit_status = 13;
 		return (NULL);
 	}
-	token->string = ft_substr(input, *i, len);
+	token->string = ft_substr(input, i, len);
 	if (type == 'w')
 	{
 		token->type = WORD;
@@ -60,6 +60,7 @@ t_token *set_token(char *input, char type, int *i, int len, char in_or_out)
 		token->type = OUT_RED;
 		printf("\033[2;37m""OUT_RED\n""\033[0m");
 	}
+	
 	if (*input == '\'')
 	{
 		token->quote_type = S_Q;
@@ -75,31 +76,29 @@ t_token *set_token(char *input, char type, int *i, int len, char in_or_out)
 	return (token);
 }
 
-t_token	*init_word(char *input, int *i)
+t_token	*handle_words(char *input, int *i)
 {
 	t_token	*token;
 	int		len;
 
 	len = pick_word(&input[*i], " '\"<>|");
-	token = set_token(input, 'w', i, len, ' ');
+	token = set_token(input, 'w', *i, len, ' ');
 	*i += len;
 	return (token);
 }
 
-t_token	*init_in_quotes(char *input, int *i)
+t_token	*handle_quotes(char *input, int *i)
 {
 	t_token	*token;
 	int		len;
-	int		val;
 
-	val = 1;
 	len = skip_quotes(input);
-	token = set_token(input, 'w', &val, len - 2, ' ');
+	token = set_token(input, 'w', 1, len - 2, ' ');
 	*i += len;
 	return (token);
 }
 
-t_token	*init_pipe_or_sep(char *input, int *i, char pipe_or_sep)
+t_token	*handle_pipe_or_sep(char *input, int *i, char pipe_or_sep)
 {
 	t_token	*token;
 
@@ -125,26 +124,26 @@ t_token	*init_pipe_or_sep(char *input, int *i, char pipe_or_sep)
 	return (token);
 }
 
-t_token	*init_single_redirection(char *input, int *i, char in_or_out)
+t_token	*handle_single_rdr(char *input, int *i, char in_or_out)
 {
 	t_token	*token;
 	int		len;
 
 	*i += skip_spaces(&input[*i + 1]) + 1;
 	len = pick_word(&input[*i], " <>|");
-	token = set_token(input, 'r', i, len, in_or_out);
+	token = set_token(input, 'r', *i, len, in_or_out);
 	*i += len;
 	return (token);
 }
 
-t_token	*init_double_redirection(char *input, int *i, char in_or_out)
+t_token	*handle_double_rdr(char *input, int *i, char in_or_out)
 {
 	t_token	*token;
 	int		len;
 
 	*i += skip_spaces(&input[*i + 2]) + 2;
 	len = pick_word(&input[*i], " <>|");
-	token = set_token(input, 'h', i, len, in_or_out);
+	token = set_token(input, 'h', *i, len, in_or_out);
 	*i += len;
 	return (token);
 }
