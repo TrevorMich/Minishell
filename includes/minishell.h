@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 09:26:32 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 10:46:57 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,12 @@ typedef struct s_cmdgroup
 
 }	t_cmdgroup;
 
-// typedef struct s_token_args
-// {
-// 	char *input; 
-// 	char type;
-// 	char in_or_out;
-// 	int i;
-// 	int len;
-// } t_token_args;
+typedef struct s_args
+{
+	char type;
+	char in_or_out;
+	int len;
+} t_args;
 
 enum	e_token_types
 {
@@ -133,6 +131,8 @@ t_token	*handle_double_rdr(char *s, int *i, char in_or_out);
 void	token_add_back(t_token **lst, t_token *new);
 t_token	*token_last(t_token *lst);
 void	remove_quotes(char *s);
+t_args	set_args(char type, char in_or_out, int len);
+t_token *set_token(char *input, int i, t_args args);
 /**
  * PARSER -> EXPANSION
 */
