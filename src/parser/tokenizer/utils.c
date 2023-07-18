@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 08:45:03 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 10:48:06 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 15:06:41 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,45 +72,45 @@ t_token *set_token(char *input, int i, t_args args)
 	if (args.type == 'w')
 	{
 		token->e_token_type = WORD;
-		printf("\033[2;37m""WORD\n""\033[0m");
+		// printf("\033[2;37m""WORD\n""\033[0m");
 	}
 	else
 	{
 		remove_quotes(token->string);
-		printf("\033[2;37m""REMOVE QUOTE\n""\033[0m");
+		// printf("\033[2;37m""REMOVE QUOTE\n""\033[0m");
 	}
 	if (args.in_or_out == '<' && args.type == 'h')
 	{
 		token->e_token_type = HERE_DOC;
-		printf("\033[2;37m""HERE_DOC\n""\033[0m");
+		// printf("\033[2;37m""HERE_DOC\n""\033[0m");
 	}
 	else if (args.in_or_out == '>' && args.type == 'h')
 	{
 		token->e_token_type = APP_RDR;
-		printf("\033[2;37m""APP_RED\n""\033[0m");
+		// printf("\033[2;37m""APP_RED\n""\033[0m");
 	}
 	else if (args.in_or_out == '<' && args.type == 'r')
 	{
 		token->e_token_type = IN_RDR;
-		printf("\033[2;37m""IN_RED\n""\033[0m");
+		// printf("\033[2;37m""IN_RED\n""\033[0m");
 	}
 	else if (args.in_or_out == '>' && args.type == 'r')
 	{
 		token->e_token_type = OUT_RDR;
-		printf("\033[2;37m""OUT_RED\n""\033[0m");
+		// printf("\033[2;37m""OUT_RED\n""\033[0m");
 	}
 
 	if (*input == '\'')
 	{
 		token->e_quote_type = SGL_QUOT;
-		printf("\033[2;37m""Single quote\n""\033[0m");
+		// printf("\033[2;37m""Single quote\n""\033[0m");
 	}
 	else if (*input == '"')
 	{
 		token->e_quote_type = DBL_QUOT;
-		printf("\033[2;37m""Double quote\n""\033[0m");
+		// printf("\033[2;37m""Double quote\n""\033[0m");
 	}
 	token->next = NULL;
-	printf("string: %s\ntoken_type: %d\nquote_type: %d\n\n", token->string, token->e_token_type, token->e_quote_type);
+	// printf("string: %s\ntoken_type: %d\nquote_type: %d\n\n", token->string, token->e_token_type, token->e_quote_type);
 	return (token);
 }

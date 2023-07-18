@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 08:45:46 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 10:46:27 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 14:56:49 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,11 @@ t_token	*handle_pipe_or_sep(char *input, int *i, char pipe_or_sep)
 	}
 	else
 	{
-		*i = *i + 1;
+		*i += 1;
 		token->e_token_type = PIPE;
 	}
 	token->next = NULL;
+	// printf("PIPE: \nstring: %s\ntoken_type: %d\nquote_type: %d\n\n", token->string, token->e_token_type, token->e_quote_type);
 	return (token);
 }
 

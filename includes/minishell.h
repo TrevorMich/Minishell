@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 10:46:57 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 16:15:13 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,7 @@ void	parser(t_data *data);
 */
 void	remove_consecutive_quotes(char *input);
 /**
- * PARSER -> TOKENIZER -> INDEX
+ * PARSER -> TOKENIZER
 */
 void	tokenizer(t_token **token_lst, char *input);
 /**
@@ -133,6 +133,7 @@ t_token	*token_last(t_token *lst);
 void	remove_quotes(char *s);
 t_args	set_args(char type, char in_or_out, int len);
 t_token *set_token(char *input, int i, t_args args);
+void check_tokens(t_token *token);
 /**
  * PARSER -> EXPANSION
 */

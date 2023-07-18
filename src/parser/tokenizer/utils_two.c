@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   index.c                                            :+:      :+:    :+:   */
+/*   utils_two.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/14 16:41:48 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 16:15:10 by doduwole         ###   ########.fr       */
+/*   Created: 2023/07/18 16:04:12 by doduwole          #+#    #+#             */
+/*   Updated: 2023/07/18 16:08:31 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/minishell.h"
+#include "../../../includes/minishell.h"
 
-void	parser(t_data *data)
+void check_tokens(t_token *token)
 {
+	t_token *token_lst;
 
-
-	remove_consecutive_quotes(data->input);
-	tokenizer(&data->token_lst, data->input);
-	check_tokens(data->token_lst);
-	expand_token_lst(data);
+	token_lst = token;
+	while (token_lst)
+	{
+		printf("%s %d %d\n",token_lst->string, token_lst->e_quote_type, token_lst->e_token_type);
+		token_lst = token_lst->next;
+	}
 }
