@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/17 17:08:53 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 08:47:23 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,10 @@ enum	e_token_types
 	SEP,
 	WORD,
 	PIPE,
-	IN_RED, //...REDIR
-	OUT_RED, //...REDIR
+	IN_RED, //...RDR
+	OUT_RED, //...RDR
 	HERE_DOC,
-	APP_RED, //...REDIR
+	APP_RED, //...RDR
 };
 
 enum	e_quote_types
@@ -63,8 +63,8 @@ typedef struct s_idx
 typedef struct s_token
 {
 	char			*string; // change name to cmd
-	int				type; // change to redir_type
-	int				quote_type;
+	int				type; // change to e_token_type
+	int				quote_type; // change to e_quote_type
 	struct s_token	*next;
 }					t_token;
 
