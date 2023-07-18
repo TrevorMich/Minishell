@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 08:45:46 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 09:02:15 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 09:29:54 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ t_token *set_token(char *input, char type, int i, int len, char in_or_out)
 	token->string = ft_substr(input, i, len);
 	if (type == 'w')
 	{
-		token->type = WORD;
+		token->e_token_type = WORD;
 		printf("\033[2;37m""WORD\n""\033[0m");
 	}
 	else
@@ -42,37 +42,37 @@ t_token *set_token(char *input, char type, int i, int len, char in_or_out)
 	}
 	if (in_or_out == '<' && type == 'h')
 	{
-		token->type = HERE_DOC;
+		token->e_token_type = HERE_DOC;
 		printf("\033[2;37m""HERE_DOC\n""\033[0m");
 	}
 	else if (in_or_out == '>' && type == 'h')
 	{
-		token->type = APP_RED;
+		token->e_token_type = APP_RDR;
 		printf("\033[2;37m""APP_RED\n""\033[0m");
 	}
 	else if (in_or_out == '<' && type == 'r')
 	{
-		token->type = IN_RED;
+		token->e_token_type = IN_RDR;
 		printf("\033[2;37m""IN_RED\n""\033[0m");
 	}
 	else if (in_or_out == '>' && type == 'r')
 	{
-		token->type = OUT_RED;
+		token->e_token_type = OUT_RDR;
 		printf("\033[2;37m""OUT_RED\n""\033[0m");
 	}
 	
 	if (*input == '\'')
 	{
-		token->quote_type = S_Q;
+		token->e_quote_type = SGL_QUOT;
 		printf("\033[2;37m""Single quote\n""\033[0m");
 	}
 	else if (*input == '"')
 	{
-		token->quote_type = D_Q;
+		token->e_quote_type = DBL_QUOT;
 		printf("\033[2;37m""Double quote\n""\033[0m");
 	}
 	token->next = NULL;
-	printf("string: %s\ntoken_type: %d\nquote_type: %d\n\n", token->string, token->type, token->quote_type);
+	printf("string: %s\ntoken_type: %d\nquote_type: %d\n\n", token->string, token->e_token_type, token->e_quote_type);
 	return (token);
 }
 
@@ -113,12 +113,12 @@ t_token	*handle_pipe_or_sep(char *input, int *i, char pipe_or_sep)
 	if (pipe_or_sep == ' ')
 	{
 		*i += skip_spaces(input);
-		token->type = SEP;
+		token->e_token_type = SEP;
 	}
 	else
 	{
 		*i = *i + 1;
-		token->type = PIPE;
+		token->e_token_type = PIPE;
 	}
 	token->next = NULL;
 	return (token);

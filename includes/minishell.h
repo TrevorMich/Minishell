@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 09:10:51 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 09:26:32 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,31 +34,31 @@ typedef struct s_cmdgroup
 
 }	t_cmdgroup;
 
-typedef struct s_token_args
-{
-	char *input; 
-	char type;
-	char in_or_out;
-	int i;
-	int len;
-} t_token_args;
+// typedef struct s_token_args
+// {
+// 	char *input; 
+// 	char type;
+// 	char in_or_out;
+// 	int i;
+// 	int len;
+// } t_token_args;
 
 enum	e_token_types
 {
 	SEP,
 	WORD,
 	PIPE,
-	IN_RED, //...RDR
-	OUT_RED, //...RDR
+	IN_RDR,
+	OUT_RDR,
 	HERE_DOC,
-	APP_RED, //...RDR
+	APP_RDR,
 };
 
 enum	e_quote_types
 {
-	NO_Q,
-	S_Q,
-	D_Q,
+	NO_QUOT,
+	SGL_QUOT,
+	DBL_QUOT,
 };
 
 typedef struct s_idx
@@ -69,9 +69,9 @@ typedef struct s_idx
 
 typedef struct s_token
 {
-	char			*string; // change name to cmd
-	int				type; // change to e_token_type
-	int				quote_type; // change to e_quote_type
+	char			*string;
+	int				e_token_type;
+	int				e_quote_type;
 	struct s_token	*next;
 }					t_token;
 
