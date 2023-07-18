@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 08:46:37 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 16:03:37 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 16:47:09 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,17 @@
 // echo dre, echo "dre", echo 'dre'
 // echo drey > readme, echo "drey" > readme, echo 'drey' > readme
 // echo < readme, echo < readme, echo < readme
-
-void	tokenizer(t_token **token_lst, char *input)
+// t_token **token_lst, char *input
+void	tokenizer(t_data *data)
 {
 	t_token	*token;
+	t_token **token_lst;
 	int		i;
+	char *input;
 
 	i = 0;
+	input = data->input;
+	token_lst = &data->token_lst;
 	while (input[i])
 	{
 		if (input[i] == '\'' || input[i] == '"')

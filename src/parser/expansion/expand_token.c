@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   index.c                                            :+:      :+:    :+:   */
+/*   expand_token.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/14 16:41:48 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 16:49:32 by doduwole         ###   ########.fr       */
+/*   Created: 2023/07/18 17:42:31 by doduwole          #+#    #+#             */
+/*   Updated: 2023/07/18 17:44:29 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/minishell.h"
+#include "../../../includes/minishell.h"
 
-void	parser(t_data *data)
+char	*expand_token(char *token, t_data *data)
 {
+	char	*exp;
+	t_idx	idx;
 
-
-	remove_consecutive_quotes(data->input);
-	// tokenizer(&data->token_lst, data->input);
-	tokenizer(data);
-	// check_tokens(data->token_lst);
-	expand_token_lst(data);
+	exp = malloc(MAX_TOKEN_SIZE);
+	if (!token)
+	{
+		print_err("Malloc failed in expand_token func","");
+		// g_exit_status = 13;
+		return (NULL);
+	}
+	idx.i = 0;
+	idx.j = 0;
+	while (token[idx.i] != '\0')
+	{
+		process_expansion(token, data, &idx, &exp);
+	}
+	exp[idx.j] = '\0';
+	return (exp);
 }

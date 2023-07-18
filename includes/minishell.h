@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 16:15:13 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 17:35:07 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,7 @@ void	remove_consecutive_quotes(char *input);
 /**
  * PARSER -> TOKENIZER
 */
-void	tokenizer(t_token **token_lst, char *input);
+void	tokenizer(t_data *data);
 /**
  * PARSER -> TOKENIZER -> HELPER
 */
@@ -140,12 +140,19 @@ void check_tokens(t_token *token);
 void	expand_token_lst(t_data *data);
 char	*expand_token(char *token, t_data *data);
 void	process_expansion(char *token, t_data *data, t_idx *idx, char **exp);
-int	dollar_in_str(char *s);
+/**
+ * PARSER -> EXPANSION -> UTILS
+*/
+// int	dollar_in_str(char *s);
+/**
+ * PARSER -> EXPANSION -> HELPER
+*/
+void	handle_exit_status(char **new_ptr, t_idx *idx);
+
 void	copy_token_char(char **new_ptr, t_idx *idx, char c);
-void	init_single_dollar(char **new_ptr, t_idx *idx);
-void	init_exit_status(char **new_ptr, t_idx *idx);
+void	handle_single_dollar(char **new_ptr, t_idx *idx);
 char	*get_exit_status(void);
-void	init_env_var(char **new_ptr, t_idx *idx, char *token, t_data *data);
+void	handle_env_var(char **new_ptr, t_idx *idx, char *token, t_data *data);
 char	*create_var_from_token(char *token, t_idx *idx);
 void	copy_env_var_value(char **new_ptr, t_idx *idx, char *env_var);
 char	*find_envp_value(t_env *env_lst, char *var_name);

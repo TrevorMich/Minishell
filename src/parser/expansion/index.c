@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 14:48:37 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 09:31:43 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 17:33:59 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	expand_token_lst(t_data *data)
 	while (tmp != NULL)
 	{
 		if (tmp->e_token_type != HERE_DOC && tmp->e_quote_type != SGL_QUOT
-			&& dollar_in_str(tmp->string))
+			&& ft_strchr(tmp->string, '$'))
 		{
 			expanded_string = expand_token(tmp->string, data);
 			if (expanded_string != NULL)
