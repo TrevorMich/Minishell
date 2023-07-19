@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/15 10:43:07 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/18 20:13:26 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef struct s_env //check israel_README
 	char			*var; //variable name
 	char			*value; //variable value
 	struct s_env	*next; //pointer to another t_env struct
+	int				sorted;
 }	t_env;
 
 typedef struct s_cmdgroup
@@ -64,17 +65,28 @@ int		array_length(char **arr);
  * BUILTINS
 */
 void	do_env(t_data *data, char **str);
-void	update_env_value(t_env *list, char *var, char *new_value);
 void	ft_env(t_data *data, char **str);
 void	cd(t_data *data, char **str);
 void	cd_to_home(t_data *data);
+void	pwd(void);
+int		do_unset(t_data *data, char **var);
+void	do_echo(char **str);
+/**
+ * BUILTIN UTILS
+*/
+void	update_env_value(t_env *list, char *var, char *new_value);
 char	*get_current_dir(void);
 void	update_dir(t_data *data);
 void	update_oldpwd(t_data *data);
-void	pwd(void);
-int		do_unset(t_data *data, char **var);
-int		check_unset(char **var);
+void	print_export(t_data *data);
+int		smaller(char *str1, char *str2);
+t_env	*set_min(t_data *data);
 void	free_var(t_env *ptr);
+int		is_update(t_data *data, char *tmp, char *value);
+int		check_error(char **var, char c);
+void	reset(t_data *data);
+char	*ft_strdup2(const char *str, int len);
+
 /**
  * INPUT ERRORS
 */
