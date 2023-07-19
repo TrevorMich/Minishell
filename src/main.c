@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 08:55:36 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/14 16:35:18 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/19 19:36:12 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,15 @@ int	main(int argc, char **argv, char **envp)
 		return (1);
 	data = ft_calloc(1, sizeof(t_data)); //Allocated memory for data struct
 	create_env_list(data, envp); //check israel_README
-	get_path(data); 
+	// get_path(data);
 	minishell(data);
 	return (0);
 }
 
 void	minishell(t_data *data)
 {
+	t_cmdgroup *group;
+	group = ft_calloc(1, sizeof(t_cmdgroup));
 	while (1)
 	{
 		data->input = readline("\033[1;34m""minishell$: ""\033[0m"); //Collect input from user
@@ -38,14 +40,21 @@ void	minishell(t_data *data)
 		}
 		if (ft_strlen(data->input) > 0)
 		{
+			group->cmd = ft_split(data->input, ' ');
 			add_history(data->input);
 			exec_minishell(data);
 			if (!ft_strcmp(data->input, "pwd"))
 				pwd();
-			if (!ft_strcmp(data->input, "env"))
-				do_env(data, &data->input);
-			if (!ft_strcmp(data->input, "cd"))
-				cd(data, &data->input);
+			if (!ft_strcmp(group->cmd[0], "env"))
+				do_env(data, group->cmd);
+			if (!ft_strcmp(group->cmd[0], "cd"))
+				cd(data, group->cmd);
+			if (!ft_strcmp(group->cmd[0], "unset"))
+				do_unset(data, group->cmd);
+			if (!ft_strcmp(group->cmd[0], "echo"))
+				do_echo(group->cmd);
+			if (!ft_strcmp(group->cmd[0], "export"))
+				export(data, group->cmd);
 			// free(data->input);
 		}
 		else
@@ -62,4 +71,3 @@ int	exec_minishell(t_data *data)
 	parser(data);
 	return (0);
 }
-

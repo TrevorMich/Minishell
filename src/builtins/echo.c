@@ -1,35 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   builtins.c                                         :+:      :+:    :+:   */
+/*   echo.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/09 12:03:55 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/14 21:32:36 by ioduwole         ###   ########.fr       */
+/*   Created: 2023/07/16 12:50:48 by ioduwole          #+#    #+#             */
+/*   Updated: 2023/07/17 15:49:33 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
 
-int	isbuiltin(t_cmdgroup *group)
+void	do_echo(char **str)
 {
-	char	**str;
-
-	if (!group || !group->cmd[0])
-		return (0);
-	str = group->cmd;
-	if (!ft_strcmp(str[0], "cd"))
-		return (1);
-	if (!ft_strcmp(str[0], "export"))
-		return (1);
-	if (!ft_strcmp(str[0], "echo"))
-		return (1);
-	if (!ft_strcmp(str[0], "pwd"))
-		return (1);
-	if (!ft_strcmp(str[0], "env"))
-		return (1);
-	if (!ft_strcmp(str[0], "unset"))
-		return (1);
-	return (0);
+	char	**tmp_str;
+	int		i;
+	
+	i = 0;
+	if (array_length(str) == 1)
+	{
+		printf("\n");
+		return ;
+	}
+	tmp_str = &str[1];
+	if (tmp_str)
+	{
+		if (!ft_strcmp(tmp_str[0], "-n"))
+			tmp_str = &tmp_str[1];
+		while (tmp_str[i])
+		{
+			printf("%s", tmp_str[i++]);
+			if (tmp_str[i])
+				printf(" ");
+		}
+	}
+	if (!(!ft_strcmp(str[1], "-n")))
+		printf("\n");
 }

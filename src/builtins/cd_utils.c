@@ -6,12 +6,11 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 12:57:45 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/09 12:59:24 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/10 19:16:16 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
-
 
 void	update_oldpwd(t_data *data)
 {
