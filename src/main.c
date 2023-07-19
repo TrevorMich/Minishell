@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 08:55:36 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/12 16:50:05 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/14 16:35:18 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int	exec_minishell(t_data *data)
 		free_all(data);
 	if (input_error(data) == -1)
 		return (-1);
-
+	parser(data);
 	return (0);
 }
 

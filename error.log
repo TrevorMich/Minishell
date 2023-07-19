@@ -1,0 +1,1186 @@
+includes/libft/ft_atoi.c: OK!
+includes/libft/ft_atoi.c: OK!
+includes/libft/ft_atoi.c: OK!
+includes/libft/ft_atoi.c: OK!
+includes/libft/ft_atoi.c: OK!
+includes/libft/ft_atoi.c: OK!
+includes/libft/ft_bzero.c: OK!
+includes/libft/ft_bzero.c: OK!
+includes/libft/ft_bzero.c: OK!
+includes/libft/ft_bzero.c: OK!
+includes/libft/ft_bzero.c: OK!
+includes/libft/ft_bzero.c: OK!
+includes/libft/ft_calloc.c: OK!
+includes/libft/ft_calloc.c: OK!
+includes/libft/ft_calloc.c: OK!
+includes/libft/ft_calloc.c: OK!
+includes/libft/ft_calloc.c: OK!
+includes/libft/ft_calloc.c: OK!
+includes/libft/ft_hexi.c: OK!
+includes/libft/ft_hexi.c: OK!
+includes/libft/ft_hexi.c: OK!
+includes/libft/ft_hexi.c: OK!
+includes/libft/ft_hexi.c: OK!
+includes/libft/ft_hexi.c: OK!
+includes/libft/ft_isalnum.c: OK!
+includes/libft/ft_isalnum.c: OK!
+includes/libft/ft_isalnum.c: OK!
+includes/libft/ft_isalnum.c: OK!
+includes/libft/ft_isalnum.c: OK!
+includes/libft/ft_isalnum.c: OK!
+includes/libft/ft_isalpha.c: OK!
+includes/libft/ft_isalpha.c: OK!
+includes/libft/ft_isalpha.c: OK!
+includes/libft/ft_isalpha.c: OK!
+includes/libft/ft_isalpha.c: OK!
+includes/libft/ft_isalpha.c: OK!
+includes/libft/ft_isascii.c: OK!
+includes/libft/ft_isascii.c: OK!
+includes/libft/ft_isascii.c: OK!
+includes/libft/ft_isascii.c: OK!
+includes/libft/ft_isascii.c: OK!
+includes/libft/ft_isascii.c: OK!
+includes/libft/ft_isdigit.c: OK!
+includes/libft/ft_isdigit.c: OK!
+includes/libft/ft_isdigit.c: OK!
+includes/libft/ft_isdigit.c: OK!
+includes/libft/ft_isdigit.c: OK!
+includes/libft/ft_isdigit.c: OK!
+includes/libft/ft_isprint.c: OK!
+includes/libft/ft_isprint.c: OK!
+includes/libft/ft_isprint.c: OK!
+includes/libft/ft_isprint.c: OK!
+includes/libft/ft_isprint.c: OK!
+includes/libft/ft_isprint.c: OK!
+includes/libft/ft_itoa.c: OK!
+includes/libft/ft_itoa.c: OK!
+includes/libft/ft_itoa.c: OK!
+includes/libft/ft_itoa.c: OK!
+includes/libft/ft_itoa.c: OK!
+includes/libft/ft_itoa.c: OK!
+includes/libft/ft_lstadd_back.c: OK!
+includes/libft/ft_lstadd_back.c: OK!
+includes/libft/ft_lstadd_back.c: OK!
+includes/libft/ft_lstadd_back.c: OK!
+includes/libft/ft_lstadd_back.c: OK!
+includes/libft/ft_lstadd_back.c: OK!
+includes/libft/ft_lstadd_front.c: OK!
+includes/libft/ft_lstadd_front.c: OK!
+includes/libft/ft_lstadd_front.c: OK!
+includes/libft/ft_lstadd_front.c: OK!
+includes/libft/ft_lstadd_front.c: OK!
+includes/libft/ft_lstadd_front.c: OK!
+includes/libft/ft_lstclear.c: OK!
+includes/libft/ft_lstclear.c: OK!
+includes/libft/ft_lstclear.c: OK!
+includes/libft/ft_lstclear.c: OK!
+includes/libft/ft_lstclear.c: OK!
+includes/libft/ft_lstclear.c: OK!
+includes/libft/ft_lstdelone.c: OK!
+includes/libft/ft_lstdelone.c: OK!
+includes/libft/ft_lstdelone.c: OK!
+includes/libft/ft_lstdelone.c: OK!
+includes/libft/ft_lstdelone.c: OK!
+includes/libft/ft_lstdelone.c: OK!
+includes/libft/ft_lstiter.c: OK!
+includes/libft/ft_lstiter.c: OK!
+includes/libft/ft_lstiter.c: OK!
+includes/libft/ft_lstiter.c: OK!
+includes/libft/ft_lstiter.c: OK!
+includes/libft/ft_lstiter.c: OK!
+includes/libft/ft_lstlast.c: OK!
+includes/libft/ft_lstlast.c: OK!
+includes/libft/ft_lstlast.c: OK!
+includes/libft/ft_lstlast.c: OK!
+includes/libft/ft_lstlast.c: OK!
+includes/libft/ft_lstlast.c: OK!
+includes/libft/ft_lstmap.c: OK!
+includes/libft/ft_lstmap.c: OK!
+includes/libft/ft_lstmap.c: OK!
+includes/libft/ft_lstmap.c: OK!
+includes/libft/ft_lstmap.c: OK!
+includes/libft/ft_lstmap.c: OK!
+includes/libft/ft_lstnew.c: OK!
+includes/libft/ft_lstnew.c: OK!
+includes/libft/ft_lstnew.c: OK!
+includes/libft/ft_lstnew.c: OK!
+includes/libft/ft_lstnew.c: OK!
+includes/libft/ft_lstnew.c: OK!
+includes/libft/ft_lstsize.c: OK!
+includes/libft/ft_lstsize.c: OK!
+includes/libft/ft_lstsize.c: OK!
+includes/libft/ft_lstsize.c: OK!
+includes/libft/ft_lstsize.c: OK!
+includes/libft/ft_lstsize.c: OK!
+includes/libft/ft_memchr.c: OK!
+includes/libft/ft_memchr.c: OK!
+includes/libft/ft_memchr.c: OK!
+includes/libft/ft_memchr.c: OK!
+includes/libft/ft_memchr.c: OK!
+includes/libft/ft_memchr.c: OK!
+includes/libft/ft_memcmp.c: OK!
+includes/libft/ft_memcmp.c: OK!
+includes/libft/ft_memcmp.c: OK!
+includes/libft/ft_memcmp.c: OK!
+includes/libft/ft_memcmp.c: OK!
+includes/libft/ft_memcmp.c: OK!
+includes/libft/ft_memcpy.c: OK!
+includes/libft/ft_memcpy.c: OK!
+includes/libft/ft_memcpy.c: OK!
+includes/libft/ft_memcpy.c: OK!
+includes/libft/ft_memcpy.c: OK!
+includes/libft/ft_memcpy.c: OK!
+includes/libft/ft_memmove.c: OK!
+includes/libft/ft_memmove.c: OK!
+includes/libft/ft_memmove.c: OK!
+includes/libft/ft_memmove.c: OK!
+includes/libft/ft_memmove.c: OK!
+includes/libft/ft_memmove.c: OK!
+includes/libft/ft_memset.c: OK!
+includes/libft/ft_memset.c: OK!
+includes/libft/ft_memset.c: OK!
+includes/libft/ft_memset.c: OK!
+includes/libft/ft_memset.c: OK!
+includes/libft/ft_memset.c: OK!
+includes/libft/ft_printf.c: OK!
+includes/libft/ft_printf.c: OK!
+includes/libft/ft_printf.c: OK!
+includes/libft/ft_printf.c: OK!
+includes/libft/ft_printf.c: OK!
+includes/libft/ft_printf.c: OK!
+includes/libft/ft_put.c: OK!
+includes/libft/ft_put.c: OK!
+includes/libft/ft_put.c: OK!
+includes/libft/ft_put.c: OK!
+includes/libft/ft_put.c: OK!
+includes/libft/ft_put.c: OK!
+includes/libft/ft_putadd.c: OK!
+includes/libft/ft_putadd.c: OK!
+includes/libft/ft_putadd.c: OK!
+includes/libft/ft_putadd.c: OK!
+includes/libft/ft_putadd.c: OK!
+includes/libft/ft_putadd.c: OK!
+includes/libft/ft_putchar_fd.c: OK!
+includes/libft/ft_putchar_fd.c: OK!
+includes/libft/ft_putchar_fd.c: OK!
+includes/libft/ft_putchar_fd.c: OK!
+includes/libft/ft_putchar_fd.c: OK!
+includes/libft/ft_putchar_fd.c: OK!
+includes/libft/ft_putendl_fd.c: OK!
+includes/libft/ft_putendl_fd.c: OK!
+includes/libft/ft_putendl_fd.c: OK!
+includes/libft/ft_putendl_fd.c: OK!
+includes/libft/ft_putendl_fd.c: OK!
+includes/libft/ft_putendl_fd.c: OK!
+includes/libft/ft_puthexi.c: OK!
+includes/libft/ft_puthexi.c: OK!
+includes/libft/ft_puthexi.c: OK!
+includes/libft/ft_puthexi.c: OK!
+includes/libft/ft_puthexi.c: OK!
+includes/libft/ft_puthexi.c: OK!
+includes/libft/ft_putnbr_fd.c: OK!
+includes/libft/ft_putnbr_fd.c: OK!
+includes/libft/ft_putnbr_fd.c: OK!
+includes/libft/ft_putnbr_fd.c: OK!
+includes/libft/ft_putnbr_fd.c: OK!
+includes/libft/ft_putnbr_fd.c: OK!
+includes/libft/ft_putstr_fd.c: OK!
+includes/libft/ft_putstr_fd.c: OK!
+includes/libft/ft_putstr_fd.c: OK!
+includes/libft/ft_putstr_fd.c: OK!
+includes/libft/ft_putstr_fd.c: OK!
+includes/libft/ft_putstr_fd.c: OK!
+includes/libft/ft_split.c: OK!
+includes/libft/ft_split.c: OK!
+includes/libft/ft_split.c: OK!
+includes/libft/ft_split.c: OK!
+includes/libft/ft_split.c: OK!
+includes/libft/ft_split.c: OK!
+includes/libft/ft_strcat.c: OK!
+includes/libft/ft_strcat.c: OK!
+includes/libft/ft_strcat.c: OK!
+includes/libft/ft_strcat.c: OK!
+includes/libft/ft_strcat.c: OK!
+includes/libft/ft_strcat.c: OK!
+includes/libft/ft_strchr.c: OK!
+includes/libft/ft_strchr.c: OK!
+includes/libft/ft_strchr.c: OK!
+includes/libft/ft_strchr.c: OK!
+includes/libft/ft_strchr.c: OK!
+includes/libft/ft_strchr.c: OK!
+includes/libft/ft_strcpy.c: OK!
+includes/libft/ft_strcpy.c: OK!
+includes/libft/ft_strcpy.c: OK!
+includes/libft/ft_strcpy.c: OK!
+includes/libft/ft_strcpy.c: OK!
+includes/libft/ft_strcpy.c: OK!
+includes/libft/ft_strdup.c: OK!
+includes/libft/ft_strdup.c: OK!
+includes/libft/ft_strdup.c: OK!
+includes/libft/ft_strdup.c: OK!
+includes/libft/ft_strdup.c: OK!
+includes/libft/ft_strdup.c: OK!
+includes/libft/ft_striteri.c: OK!
+includes/libft/ft_striteri.c: OK!
+includes/libft/ft_striteri.c: OK!
+includes/libft/ft_striteri.c: OK!
+includes/libft/ft_striteri.c: OK!
+includes/libft/ft_striteri.c: OK!
+includes/libft/ft_strjoin.c: OK!
+includes/libft/ft_strjoin.c: OK!
+includes/libft/ft_strjoin.c: OK!
+includes/libft/ft_strjoin.c: OK!
+includes/libft/ft_strjoin.c: OK!
+includes/libft/ft_strjoin.c: OK!
+includes/libft/ft_strlcat.c: OK!
+includes/libft/ft_strlcat.c: OK!
+includes/libft/ft_strlcat.c: OK!
+includes/libft/ft_strlcat.c: OK!
+includes/libft/ft_strlcat.c: OK!
+includes/libft/ft_strlcat.c: OK!
+includes/libft/ft_strlcpy.c: OK!
+includes/libft/ft_strlcpy.c: OK!
+includes/libft/ft_strlcpy.c: OK!
+includes/libft/ft_strlcpy.c: OK!
+includes/libft/ft_strlcpy.c: OK!
+includes/libft/ft_strlcpy.c: OK!
+includes/libft/ft_strlen.c: OK!
+includes/libft/ft_strlen.c: OK!
+includes/libft/ft_strlen.c: OK!
+includes/libft/ft_strlen.c: OK!
+includes/libft/ft_strlen.c: OK!
+includes/libft/ft_strlen.c: OK!
+includes/libft/ft_strmapi.c: OK!
+includes/libft/ft_strmapi.c: OK!
+includes/libft/ft_strmapi.c: OK!
+includes/libft/ft_strmapi.c: OK!
+includes/libft/ft_strmapi.c: OK!
+includes/libft/ft_strmapi.c: OK!
+includes/libft/ft_strncmp.c: OK!
+includes/libft/ft_strncmp.c: OK!
+includes/libft/ft_strncmp.c: OK!
+includes/libft/ft_strncmp.c: OK!
+includes/libft/ft_strncmp.c: OK!
+includes/libft/ft_strncmp.c: OK!
+includes/libft/ft_strnstr.c: OK!
+includes/libft/ft_strnstr.c: OK!
+includes/libft/ft_strnstr.c: OK!
+includes/libft/ft_strnstr.c: OK!
+includes/libft/ft_strnstr.c: OK!
+includes/libft/ft_strnstr.c: OK!
+includes/libft/ft_strrchr.c: OK!
+includes/libft/ft_strrchr.c: OK!
+includes/libft/ft_strrchr.c: OK!
+includes/libft/ft_strrchr.c: OK!
+includes/libft/ft_strrchr.c: OK!
+includes/libft/ft_strrchr.c: OK!
+includes/libft/ft_strtrim.c: OK!
+includes/libft/ft_strtrim.c: OK!
+includes/libft/ft_strtrim.c: OK!
+includes/libft/ft_strtrim.c: OK!
+includes/libft/ft_strtrim.c: OK!
+includes/libft/ft_strtrim.c: OK!
+includes/libft/ft_substr.c: OK!
+includes/libft/ft_substr.c: OK!
+includes/libft/ft_substr.c: OK!
+includes/libft/ft_substr.c: OK!
+includes/libft/ft_substr.c: OK!
+includes/libft/ft_substr.c: OK!
+includes/libft/ft_tolower.c: OK!
+includes/libft/ft_tolower.c: OK!
+includes/libft/ft_tolower.c: OK!
+includes/libft/ft_tolower.c: OK!
+includes/libft/ft_tolower.c: OK!
+includes/libft/ft_tolower.c: OK!
+includes/libft/ft_toupper.c: OK!
+includes/libft/ft_toupper.c: OK!
+includes/libft/ft_toupper.c: OK!
+includes/libft/ft_toupper.c: OK!
+includes/libft/ft_toupper.c: OK!
+includes/libft/ft_toupper.c: OK!
+includes/libft/ft_utoa.c: OK!
+includes/libft/ft_utoa.c: OK!
+includes/libft/ft_utoa.c: OK!
+includes/libft/ft_utoa.c: OK!
+includes/libft/ft_utoa.c: OK!
+includes/libft/ft_utoa.c: OK!
+includes/libft/get_next_line.c: OK!
+includes/libft/get_next_line.c: OK!
+includes/libft/get_next_line.c: OK!
+includes/libft/get_next_line.c: OK!
+includes/libft/get_next_line.c: OK!
+includes/libft/get_next_line.c: OK!
+src/builtins/builtins.c: OK!
+src/builtins/builtins.c: OK!
+src/builtins/builtins.c: OK!
+src/builtins/builtins.c: OK!
+src/builtins/builtins.c: OK!
+src/builtins/builtins.c: OK!
+src/builtins/cd.c: Error!
+Error: SPC_BEFORE_NL        (line:  20, col:  56):	Space before newline
+Error: SPACE_REPLACE_TAB    (line:  42, col:   9):	Found space when expecting tab
+src/builtins/cd.c: Error!
+Error: SPC_BEFORE_NL        (line:  20, col:  56):	Space before newline
+Error: SPACE_REPLACE_TAB    (line:  42, col:   9):	Found space when expecting tab
+src/builtins/cd.c: Error!
+Error: SPC_BEFORE_NL        (line:  20, col:  56):	Space before newline
+Error: SPACE_REPLACE_TAB    (line:  42, col:   9):	Found space when expecting tab
+src/builtins/cd.c: Error!
+Error: SPC_BEFORE_NL        (line:  20, col:  56):	Space before newline
+Error: SPACE_REPLACE_TAB    (line:  42, col:   9):	Found space when expecting tab
+src/builtins/cd.c: Error!
+Error: SPC_BEFORE_NL        (line:  20, col:  56):	Space before newline
+Error: SPACE_REPLACE_TAB    (line:  42, col:   9):	Found space when expecting tab
+src/builtins/cd.c: Error!
+Error: SPC_BEFORE_NL        (line:  20, col:  56):	Space before newline
+Error: SPACE_REPLACE_TAB    (line:  42, col:   9):	Found space when expecting tab
+src/builtins/cd_utils.c: Error!
+Error: CONSECUTIVE_NEWLINES (line:  15, col:   1):	Consecutive newlines
+src/builtins/cd_utils.c: Error!
+Error: CONSECUTIVE_NEWLINES (line:  15, col:   1):	Consecutive newlines
+src/builtins/cd_utils.c: Error!
+Error: CONSECUTIVE_NEWLINES (line:  15, col:   1):	Consecutive newlines
+src/builtins/cd_utils.c: Error!
+Error: CONSECUTIVE_NEWLINES (line:  15, col:   1):	Consecutive newlines
+src/builtins/cd_utils.c: Error!
+Error: CONSECUTIVE_NEWLINES (line:  15, col:   1):	Consecutive newlines
+src/builtins/cd_utils.c: Error!
+Error: CONSECUTIVE_NEWLINES (line:  15, col:   1):	Consecutive newlines
+src/builtins/env.c: Error!
+Error: NL_AFTER_VAR_DECL    (line:  36, col:   1):	Variable declarations must be followed by a newline
+src/builtins/env.c: Error!
+Error: NL_AFTER_VAR_DECL    (line:  36, col:   1):	Variable declarations must be followed by a newline
+src/builtins/env.c: Error!
+Error: NL_AFTER_VAR_DECL    (line:  36, col:   1):	Variable declarations must be followed by a newline
+src/builtins/env.c: Error!
+Error: NL_AFTER_VAR_DECL    (line:  36, col:   1):	Variable declarations must be followed by a newline
+src/builtins/env.c: Error!
+Error: NL_AFTER_VAR_DECL    (line:  36, col:   1):	Variable declarations must be followed by a newline
+src/builtins/env.c: Error!
+Error: NL_AFTER_VAR_DECL    (line:  36, col:   1):	Variable declarations must be followed by a newline
+src/builtins/pwd.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   9):	Found space when expecting tab
+src/builtins/pwd.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   9):	Found space when expecting tab
+src/builtins/pwd.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   9):	Found space when expecting tab
+src/builtins/pwd.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   9):	Found space when expecting tab
+src/builtins/pwd.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   9):	Found space when expecting tab
+src/builtins/pwd.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   9):	Found space when expecting tab
+src/cmdgroup_init/cmd_path.c: OK!
+src/cmdgroup_init/cmd_path.c: OK!
+src/cmdgroup_init/cmd_path.c: OK!
+src/cmdgroup_init/cmd_path.c: OK!
+src/cmdgroup_init/cmd_path.c: OK!
+src/cmdgroup_init/cmd_path.c: OK!
+src/cmdgroup_init/utils.c: OK!
+src/cmdgroup_init/utils.c: OK!
+src/cmdgroup_init/utils.c: OK!
+src/cmdgroup_init/utils.c: OK!
+src/cmdgroup_init/utils.c: OK!
+src/cmdgroup_init/utils.c: OK!
+src/envp_init/envp_init.c: OK!
+src/envp_init/envp_init.c: OK!
+src/envp_init/envp_init.c: OK!
+src/envp_init/envp_init.c: OK!
+src/envp_init/envp_init.c: OK!
+src/envp_init/envp_init.c: OK!
+src/free/free.c: OK!
+src/free/free.c: OK!
+src/free/free.c: OK!
+src/free/free.c: OK!
+src/free/free.c: OK!
+src/free/free.c: OK!
+src/input/index.c: OK!
+src/input/index.c: OK!
+src/input/index.c: OK!
+src/input/index.c: OK!
+src/input/index.c: OK!
+src/input/index.c: OK!
+src/input/input_errors.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: EXP_NEWLINE          (line:  20, col:  30):	Expected newline after control structure
+src/input/input_errors.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: EXP_NEWLINE          (line:  20, col:  30):	Expected newline after control structure
+src/input/input_errors.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: EXP_NEWLINE          (line:  20, col:  30):	Expected newline after control structure
+src/input/input_errors.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: EXP_NEWLINE          (line:  20, col:  30):	Expected newline after control structure
+src/input/input_errors.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: EXP_NEWLINE          (line:  20, col:  30):	Expected newline after control structure
+src/input/input_errors.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: EXP_NEWLINE          (line:  20, col:  30):	Expected newline after control structure
+src/input/redirection_errors.c: OK!
+src/input/redirection_errors.c: OK!
+src/input/redirection_errors.c: OK!
+src/input/redirection_errors.c: OK!
+src/input/redirection_errors.c: OK!
+src/input/redirection_errors.c: OK!
+src/main.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  17, col:  20):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  17, col:  20):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  21, col:  42):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  21, col:  42):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:  34):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:  34):	Comment is invalid in this scope
+Error: SPC_BEFORE_NL        (line:  23, col:  20):	Space before newline
+Error: LINE_TOO_LONG        (line:  32, col:  68):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  32, col:  68):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  32, col:  68):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  32, col:  93):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:  13):	Comment is invalid in this scope
+Error: EMPTY_LINE_EOF       (line:  65, col:   1):	Empty line at end of file
+src/main.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  17, col:  20):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  17, col:  20):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  21, col:  42):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  21, col:  42):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:  34):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:  34):	Comment is invalid in this scope
+Error: SPC_BEFORE_NL        (line:  23, col:  20):	Space before newline
+Error: LINE_TOO_LONG        (line:  32, col:  68):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  32, col:  68):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  32, col:  68):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  32, col:  93):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:  13):	Comment is invalid in this scope
+Error: EMPTY_LINE_EOF       (line:  65, col:   1):	Empty line at end of file
+src/main.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  17, col:  20):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  17, col:  20):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  21, col:  42):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  21, col:  42):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:  34):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:  34):	Comment is invalid in this scope
+Error: SPC_BEFORE_NL        (line:  23, col:  20):	Space before newline
+Error: LINE_TOO_LONG        (line:  32, col:  68):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  32, col:  68):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  32, col:  68):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  32, col:  93):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:  13):	Comment is invalid in this scope
+Error: EMPTY_LINE_EOF       (line:  65, col:   1):	Empty line at end of file
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/expand_token.c: Error!
+Error: SPC_AFTER_OPERATOR   (line:  23, col:  55):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   9):	Comment is invalid in this scope
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/helper.c: Error!
+Error: EMPTY_LINE_EOF       (line:  51, col:   1):	Empty line at end of file
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/index.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  35, col:   1):	Expected newline after brace
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/process_expansion.c: OK!
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/expansion/utils.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  46, col:   9):	Comment is invalid in this scope
+src/parser/index.c: Error!
+Error: EMPTY_LINE_FUNCTION  (line:  17, col:   1):	Empty line in function
+Error: CONSECUTIVE_NEWLINES (line:  18, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  18, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line:  20, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:   5):	Comment is invalid in this scope
+Error: BRACE_SHOULD_EOL     (line:  24, col:   1):	Expected newline after brace
+src/parser/index.c: Error!
+Error: EMPTY_LINE_FUNCTION  (line:  17, col:   1):	Empty line in function
+Error: CONSECUTIVE_NEWLINES (line:  18, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  18, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line:  20, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:   5):	Comment is invalid in this scope
+Error: BRACE_SHOULD_EOL     (line:  24, col:   1):	Expected newline after brace
+src/parser/index.c: Error!
+Error: EMPTY_LINE_FUNCTION  (line:  17, col:   1):	Empty line in function
+Error: CONSECUTIVE_NEWLINES (line:  18, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  18, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line:  20, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:   5):	Comment is invalid in this scope
+Error: BRACE_SHOULD_EOL     (line:  24, col:   1):	Expected newline after brace
+src/parser/index.c: Error!
+Error: EMPTY_LINE_FUNCTION  (line:  17, col:   1):	Empty line in function
+Error: CONSECUTIVE_NEWLINES (line:  18, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  18, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line:  20, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:   5):	Comment is invalid in this scope
+Error: BRACE_SHOULD_EOL     (line:  24, col:   1):	Expected newline after brace
+src/parser/index.c: Error!
+Error: EMPTY_LINE_FUNCTION  (line:  17, col:   1):	Empty line in function
+Error: CONSECUTIVE_NEWLINES (line:  18, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  18, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line:  20, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:   5):	Comment is invalid in this scope
+Error: BRACE_SHOULD_EOL     (line:  24, col:   1):	Expected newline after brace
+src/parser/index.c: Error!
+Error: EMPTY_LINE_FUNCTION  (line:  17, col:   1):	Empty line in function
+Error: CONSECUTIVE_NEWLINES (line:  18, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  18, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line:  20, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  22, col:   5):	Comment is invalid in this scope
+Error: BRACE_SHOULD_EOL     (line:  24, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/quotes_remover/redundant_quotes.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  17, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  18, col:   8):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: BRACE_SHOULD_EOL     (line:  40, col:   1):	Expected newline after brace
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/helper.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  18, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  18, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  19, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  19, col:   9):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  31, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  31, col:  12):	Misaligned variable declaration
+Error: SPC_AFTER_OPERATOR   (line:  48, col:  53):	missing space after operator
+Error: WRONG_SCOPE_COMMENT  (line:  49, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  64, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  64, col: 125):	line too long
+Error: SPACE_REPLACE_TAB    (line:  71, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  71, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  72, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  72, col:   9):	Misaligned variable declaration
+Error: CONSECUTIVE_NEWLINES (line:  74, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  74, col:   1):	Empty line in function
+Error: SPACE_REPLACE_TAB    (line:  86, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  86, col:  12):	Misaligned variable declaration
+Error: SPACE_REPLACE_TAB    (line:  87, col:   8):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  87, col:   9):	Misaligned variable declaration
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/index.c: Error!
+Error: SPACE_REPLACE_TAB    (line:  23, col:  12):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  25, col:   9):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  25, col:  10):	Misaligned variable declaration
+Error: BRACE_SHOULD_EOL     (line:  46, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  50, col:   7):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  52, col:  11):	Found space when expecting tab
+Error: SPACE_BEFORE_FUNC    (line:  60, col:   8):	space before function name
+Error: WRONG_SCOPE_COMMENT  (line:  68, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  75, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  80, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  85, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  90, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  95, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 100, col:   9):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line: 102, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line: 106, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line: 111, col:   9):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col:   1):	line too long
+Error: WRONG_SCOPE_COMMENT  (line: 114, col:   5):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line: 114, col: 118):	line too long
+Error: TOO_MANY_LINES       (line: 116, col:   1):	Function has more than 25 lines
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/parser/tokenizer/utils_two.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  15, col:   5):	space before function name
+Error: SPACE_REPLACE_TAB    (line:  17, col:  12):	Found space when expecting tab
+Error: SPC_AFTER_OPERATOR   (line:  22, col:  27):	missing space after operator
+Error: LINE_TOO_LONG        (line:  22, col:  83):	line too long
+Error: BRACE_SHOULD_EOL     (line:  25, col:   1):	Expected newline after brace
+src/utils/one.c: OK!
+src/utils/one.c: OK!
+src/utils/one.c: OK!
+src/utils/one.c: OK!
+src/utils/one.c: OK!
+src/utils/one.c: OK!
