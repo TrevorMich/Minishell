@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   redirection_errors.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/12 09:50:28 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/12 15:26:09 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/19 12:26:54 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
