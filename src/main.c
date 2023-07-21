@@ -6,13 +6,12 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 08:55:36 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/19 12:24:55 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/19 20:42:25 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/minishell.h"
 
-int	export(t_data *data, char **var);
 int	main(int argc, char **argv, char **envp)
 {
 	t_data	*data; //pointer to data struct

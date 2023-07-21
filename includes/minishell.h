@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 20:13:26 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/21 14:06:39 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ void	cd_to_home(t_data *data);
 void	pwd(void);
 int		do_unset(t_data *data, char **var);
 void	do_echo(char **str);
+int		export(t_data *data, char **var);
 /**
  * BUILTIN UTILS
 */
