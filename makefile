@@ -6,13 +6,13 @@
 #    By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/21 09:00:17 by ioduwole          #+#    #+#              #
-#    Updated: 2023/07/10 18:37:34 by doduwole         ###   ########.fr        #
+#    Updated: 2023/07/20 09:29:19 by doduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = minishell
 
-SRC := $(wildcard *.c */*.c */*/*.c */*/*/*.c)
+SRC := $(wildcard *.c */*.c */*/*.c */*/*/*.c */*/*/*/*.c)
 
 CC  =  gcc
 

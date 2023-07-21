@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 17:35:07 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/21 20:34:22 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,16 @@
 # include <readline/readline.h>
 # include <string.h>
 # include "libft/libft.h"
+# include "errno.h"
 
 # define MAX_TOKEN_SIZE 1024
+int		g_exit_status;
 typedef struct s_env //check israel_README
 {
 	char			*var; //variable name // change name to key
 	char			*value; //variable value
 	struct s_env	*next; //pointer to another t_env struct
+	int				sorted;
 }	t_env;
 
 typedef struct s_cmdgroup
@@ -81,29 +84,53 @@ typedef struct s_data //data struct
 	t_token		*token_lst;
 }	t_data;
 
+/**
+ * MINISHELL PROGRAM
+*/
+void	minishell(t_data *data);
+int		exec_minishell(t_data *data);
+
+/**
+ * UTILITIES
+*/
 char	*ft_strjoin2(char const *s1, char const *s2, char c);
 t_env	*find_path(t_data *data);
-char	*get_current_dir(void);
-void	do_env(t_data *data, char **str);
-void	update_oldpwd(t_data *data);
-void	update_env_value(t_env *list, char *var, char *new_value);
 void	add_path(t_cmdgroup *group, char **path);
-void	update_dir(t_data *data);
-void	minishell(t_data *data);
 void	clear(char **str);
 void	create_env_list(t_data *data, char **envp);
 void	insert_last(t_data *data, char *envp);
-void	ft_env(t_data *data, char **str);
 int		ft_strcmp(const char *s1, const char *s2);
 void	free_all(t_data *data);
 void	get_path(t_data *data);
 int		array_length(char **arr);
-int		exec_minishell(t_data *data);
+void	print_welcome(int argc, char **argv);
 /**
  * BUILTINS
 */
+void	do_env(t_data *data, char **str);
+void	ft_env(t_data *data, char **str);
 void	cd(t_data *data, char **str);
+void	cd_to_home(t_data *data);
 void	pwd(void);
+int		do_unset(t_data *data, char **var);
+void	do_echo(char **str);
+int		export(t_data *data, char **var);
+/**
+ * BUILTIN UTILS
+*/
+void	update_env_value(t_env *list, char *var, char *new_value);
+char	*get_current_dir(void);
+void	update_dir(t_data *data);
+void	update_oldpwd(t_data *data);
+void	print_export(t_data *data);
+int		smaller(char *str1, char *str2);
+t_env	*set_min(t_data *data);
+void	free_var(t_env *ptr);
+int		is_update(t_data *data, char *tmp, char *value);
+int		check_error(char **var, char c);
+void	reset(t_data *data);
+char	*ft_strdup2(const char *str, int len);
+
 /**
  * PARSER ->
 */

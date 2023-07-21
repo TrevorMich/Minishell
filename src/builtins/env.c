@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 19:34:08 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/10 11:25:15 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/10 14:02:42 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	do_env(t_data *data, char **str)
 {
 	t_env	*tmp;
 
-	if (array_length(str) > 2)
+	if (array_length(str) >= 2)
 	{
 		printf("minishell: env: '%s': No such file or directory\n", str[1]);
 		return ;

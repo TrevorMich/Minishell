@@ -1,21 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   index.c                                            :+:      :+:    :+:   */
+/*   echo.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/14 16:41:48 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/21 20:37:52 by ioduwole         ###   ########.fr       */
+/*   Created: 2023/07/16 12:50:48 by ioduwole          #+#    #+#             */
+/*   Updated: 2023/07/17 15:49:33 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
 
-void	parser(t_data *data)
+void	do_echo(char **str)
 {
-	remove_consecutive_quotes(data->input);
-	tokenizer(data);
-	// check_tokens(data->token_lst);
-	expand_token_lst(data);
+	char	**tmp_str;
+	int		i;
+	
+	i = 0;
+	if (array_length(str) == 1)
+	{
+		printf("\n");
+		return ;
+	}
+	tmp_str = &str[1];
+	if (tmp_str)
+	{
+		if (!ft_strcmp(tmp_str[0], "-n"))
+			tmp_str = &tmp_str[1];
+		while (tmp_str[i])
+		{
+			printf("%s", tmp_str[i++]);
+			if (tmp_str[i])
+				printf(" ");
+		}
+	}
+	if (!(!ft_strcmp(str[1], "-n")))
+		printf("\n");
 }

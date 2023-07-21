@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   index.c                                            :+:      :+:    :+:   */
+/*   one.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 15:48:08 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/17 12:56:24 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/21 20:29:09 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,4 +63,19 @@ int	pick_word(char *str, char *char_set)
 		i++;
 	}
 	return (i);
+}
+
+void print_welcome(int argc, char **argv)
+{
+	if (argc > 1 || argv[1])
+		exit(printf("error: minishell can't take argument(s)\n") - 39);
+	printf(" *********************************\n");
+	printf("|                                 |\n");
+	printf("|       Welcome to""\033[1;34m"" Minishell""\033[0m""      |\n");
+	printf("|               ""\033[3m""\033[2;37m""by""\033[0m"\
+	"                |\n");
+	printf("|        ""\033[33m""Israel ""\033[0m""&""\033[0;33m"" Dare"\
+	"\033[0m""            |\n");
+	printf("|                                 |\n");
+	printf(" ********************************* \n");
 }

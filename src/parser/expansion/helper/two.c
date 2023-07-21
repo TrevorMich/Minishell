@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   helper.c                                           :+:      :+:    :+:   */
+/*   two.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/16 14:51:10 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 17:46:25 by doduwole         ###   ########.fr       */
+/*   Created: 2023/07/20 11:44:16 by doduwole          #+#    #+#             */
+/*   Updated: 2023/07/21 11:44:39 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/minishell.h"
+#include "../../../../includes/minishell.h"
 
 void	handle_exit_status(char **new_ptr, t_idx *idx)
 {
@@ -43,9 +43,7 @@ void	handle_env_var(char **new_ptr, t_idx *idx, char *token, t_data *data)
 		copy_env_var_value(new_ptr, idx, env_var);
 	free(var);
 }
-
 void	copy_token_char(char **new_ptr, t_idx *idx, char c)
 {
 	(*new_ptr)[(idx->j)++] = c;
 }
-
