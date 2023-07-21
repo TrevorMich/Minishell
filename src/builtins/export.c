@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 15:50:28 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/21 14:07:01 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/21 20:28:00 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char **handle_value(char **var)
 
 	i = 1;
 	j = 0;
-	val = malloc(array_length(var) * sizeof(char **));
+	val = malloc((array_length(var) * sizeof(char **)) + 1);
 	while (var[i])
 	{
 		str = ft_strchr(var[i++], '=');
@@ -56,13 +56,12 @@ char **handle_key(char **var, char **ptr)
 	i = 0;
 	j = 0;
 	k = 0;
-	key = malloc(array_length(var) * sizeof(char **));
+	key = malloc((array_length(var) * sizeof(char **)) + 1);
 	while (var[i])
 	{
 		str = ft_strchr(var[i], '=');
 		if (str)
 		{
-
 			key[j++] = ft_strdup2(var[i], ptr[k] - var[i]);
 			k++;
 		}
@@ -76,42 +75,32 @@ int	export(t_data *data, char **var)
 	char	**value;
 	char	**key;
 	char	**str;
+	int 	i;
 	
 	if (array_length(var) == 1)
 		return (print_export(data), reset(data), 1);
 	value = handle_value(var);
 	key = handle_key(var, value);
-	str = malloc(array_length(var) * sizeof(char **));
-
-	int i;
-	i = 0;
-	// while (tmp[i] && ptr[i])
-	// {
-	// 	printf("%s = %s\n", tmp[i], ptr[i]);
-	// 	i++;
-	// }
-
+	str = malloc((array_length(var) * sizeof(char **)) + 1);
 	if (!check_error(var, 'e'))
 		return (printf("minishell: export: '%s': not a valid identifier\n",
 				var[1]), 0);
+	i = 0;
 	while (value[i] && key[i])
 	{
 		str[i] = ft_strjoin(key[i], value[i]);
 		i++;
 	}
-	
-	 i = 0;
-	// int j = 0;
-	// while (var[i])
-	// 	str[j++] = ft_split(*(var++), '\0');
-	// i = 0;
-	// while (str[i])
-	// 	printf("%s\n", str[i++]);
-		
-	// if (!is_update(data, key, value + 1))
-	// 	create_env_list(data, str);
-	// free(key);
-	// clear(str);
+	i = 0;
+	while (key[i])
+	{
+		if (!is_update(data, key[i], value[i] + 1))
+			create_env_list(data, str);
+		i++;
+	}
+	clear(key);
+	clear(value);
+	clear(str);		//leak problem needs to be fixed
 	return (1);
 }
 
@@ -122,7 +111,7 @@ int	is_update(t_data *data, char *tmp, char *value)
 	ptr = data->env;
 	while (ptr)
 	{
-		if (!ft_strcmp(ptr->value, tmp))
+		if (!ft_strcmp(ptr->var, tmp))
 		{
 			if (!(!ft_strcmp(ptr->value, value)))
 			{
