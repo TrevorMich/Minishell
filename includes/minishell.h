@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/20 07:29:32 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/21 20:29:34 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,7 @@ int		ft_strcmp(const char *s1, const char *s2);
 void	free_all(t_data *data);
 void	get_path(t_data *data);
 int		array_length(char **arr);
+void	print_welcome(int argc, char **argv);
 /**
  * BUILTINS
 */
