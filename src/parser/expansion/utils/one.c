@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   one.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/17 08:49:04 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 17:48:59 by doduwole         ###   ########.fr       */
+/*   Created: 2023/07/20 11:46:50 by doduwole          #+#    #+#             */
+/*   Updated: 2023/07/20 11:47:35 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/minishell.h"
+#include "../../../../includes/minishell.h"
 
 // int	dollar_in_str(char *s)
 // {
@@ -27,8 +27,7 @@ char	*get_exit_status(void)
 {
 	char	*value;
 
-	value = ft_itoa(13);
-	// value = ft_itoa(g_exit_status);
+	value = ft_itoa(g_exit_status);
 	if (!value)
 		return (NULL);
 	return (value);
@@ -43,7 +42,7 @@ char	*create_var_from_token(char *token, t_idx *idx)
 	if (!token)
 	{
 		printf("minishell: malloc failed in expander_init2\n");
-		// g_exit_status = 13;
+		g_exit_status = 13;
 		return (NULL);
 	}
 	var_len = 0;

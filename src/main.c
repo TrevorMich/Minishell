@@ -6,24 +6,13 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 08:55:36 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/19 19:36:12 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/21 19:13:54 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/minishell.h"
 
-int	main(int argc, char **argv, char **envp)
-{
-	t_data	*data; //pointer to data struct
-	(void) argv;
-	if (argc != 1)
-		return (1);
-	data = ft_calloc(1, sizeof(t_data)); //Allocated memory for data struct
-	create_env_list(data, envp); //check israel_README
-	// get_path(data);
-	minishell(data);
-	return (0);
-}
+
 
 void	minishell(t_data *data)
 {
@@ -69,5 +58,30 @@ int	exec_minishell(t_data *data)
 	if (input_error(data) == -1)
 		return (-1);
 	parser(data);
+	return (0);
+}
+void print_welcome(int argc, char **argv)
+{
+	if (argc > 1 || argv[1])
+		exit(printf("error: minishell can't take argument(s)\n") - 39);
+	printf("\n *********************************\n");
+	printf("|       Welcome to""\033[1;34m"" Minishell""\033[0m""      |\n");
+	printf("|               ""\033[3m""\033[2;37m""by""\033[0m""                |\n");
+	printf("|        ""\033[33m""Israel ""\033[0m""&""\033[0;33m"" Dare""\033[0m""            |\n");
+	printf(" ********************************* \n");
+}
+
+int	main(int argc, char **argv, char **envp)
+{
+	t_data	*data; //pointer to data struct
+
+	(void) argv;
+	print_welcome(argc, argv);
+	// if (argc != 1)
+	// 	return (1);
+data = ft_calloc(1, sizeof(t_data)); // Allocated memory for data struct
+	create_env_list(data, envp); //check israel_README
+	// get_path(data);
+	minishell(data);
 	return (0);
 }

@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   input_errors.c                                     :+:      :+:    :+:   */
+/*   one.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/08 16:39:04 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/14 16:41:03 by doduwole         ###   ########.fr       */
+/*   Created: 2023/07/20 09:38:57 by doduwole          #+#    #+#             */
+/*   Updated: 2023/07/20 09:40:05 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/minishell.h"
+#include "../../../includes/minishell.h"
 
 int	space_err(char *input)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while (input[i++] == ' ');
+	while (input[i] == ' ')
+		i++;
 	if (input[i] == '\0')
 		return (print_err("Empty command", " "), -1);
 	return (0);
@@ -99,32 +100,5 @@ int	special_char_err(char *input)
 		else
 			i++;
 	}
-	return (0);
-}
-
-int	redirection_err(char *input)
-{
-	int	i;
-	int	value;
-
-	i = 0;
-	value = 0;
-	while (input[i] != '\0' && value != -1)
-	{
-		if (input[i] == '\'' || input[i] == '"')
-			i += skip_quotes(&input[i]);
-		else if (input[i] == '<' && input[i + 1] != '<')
-			value = redir_type_err(input, &i, "<", 1);
-		else if (input[i] == '>' && input[i + 1] != '>')
-			value = redir_type_err(input, &i, ">", 1);
-		else if (input[i] == '<' && input[i + 1] == '<')
-			value = redir_type_err(input, &i, "<<", 2);
-		else if (input[i] == '>' && input[i + 1] == '>')
-			value = redir_type_err(input, &i, ">>", 2);
-		else
-			i++;
-	}
-	if (value == -1)
-		return (-1);
 	return (0);
 }

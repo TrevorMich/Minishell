@@ -3,14 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2023/07/18 17:35:07 by doduwole         ###   ########.fr       */
-=======
-/*   Updated: 2023/07/18 20:13:26 by ioduwole         ###   ########.fr       */
->>>>>>> ab172e1d87a846e01056ecd62506e1a80744de29
+/*   Updated: 2023/07/20 07:29:32 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +21,7 @@
 # include "errno.h"
 
 # define MAX_TOKEN_SIZE 1024
+int		g_exit_status;
 typedef struct s_env //check israel_README
 {
 	char			*var; //variable name // change name to key
@@ -116,6 +113,7 @@ void	cd_to_home(t_data *data);
 void	pwd(void);
 int		do_unset(t_data *data, char **var);
 void	do_echo(char **str);
+int		export(t_data *data, char **var);
 /**
  * BUILTIN UTILS
 */
