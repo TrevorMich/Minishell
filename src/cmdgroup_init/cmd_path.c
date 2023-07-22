@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 17:17:18 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/09 00:21:16 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/22 02:39:27 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	get_path(t_data *data)
 	t_env			*env;
 	char			**path;
 	t_cmdgroup		*group;
-
+	
 	group = data->cmdgroup;
 	path = NULL;
 	env = find_path(data);
@@ -37,8 +37,7 @@ t_env	*find_path(t_data *data)
 	t_env	*env;
 
 	env = data->env;
-	while (env && !(!ft_strncmp(env->var, "PATH", 4)
-			&& ft_strlen(env->var) == 4))
+	while (env && !(!ft_strcmp(env->var, "PATH")))
 		env = env->next;
 	return (env);
 }
@@ -54,7 +53,7 @@ void	add_path(t_cmdgroup *group, char **path)
 	tmp_path = ft_calloc(array_length(path) + 1, sizeof(char *));
 	while (path[i])
 	{
-		if (path[i][ft_strlen(path[i] - 1)] != '/')
+		if (path[i][ft_strlen(path[i - 1])] != '/')
 			tmp_path[i] = ft_strjoin2(path[i], group->cmd[0], '/');
 		else
 			tmp_path[i] = ft_strjoin(path[i], group->cmd[0]);
