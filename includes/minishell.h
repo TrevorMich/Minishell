@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/21 20:34:22 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/22 02:05:15 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ int		exec_minishell(t_data *data);
 /**
  * UTILITIES
 */
-char	*ft_strjoin2(char const *s1, char const *s2, char c);
+char	*ft_strjoin2(char *s1, char *s2, char c);
 t_env	*find_path(t_data *data);
 void	add_path(t_cmdgroup *group, char **path);
 void	clear(char **str);
