@@ -1,35 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   builtins.c                                         :+:      :+:    :+:   */
+/*   free2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/09 12:03:55 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/26 20:50:00 by ioduwole         ###   ########.fr       */
+/*   Created: 2023/07/26 08:22:06 by ioduwole          #+#    #+#             */
+/*   Updated: 2023/07/26 08:26:55 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
 
-int	the_builtins(t_cmdgroup *group)
+void	exit_free(t_data *data)
 {
-	char	**str;
+	t_env	*tmp;
 
-	if (!group || !group->cmd[0])
-		return (0);
-	str = group->cmd;
-	if (!ft_strcmp(str[0], "cd"))
-		return (1);
-	if (!ft_strcmp(str[0], "export"))
-		return (1);
-	if (!ft_strcmp(str[0], "echo"))
-		return (1);
-	if (!ft_strcmp(str[0], "pwd"))
-		return (1);
-	if (!ft_strcmp(str[0], "env"))
-		return (1);
-	if (!ft_strcmp(str[0], "unset"))
-		return (1);
-	return (0);
+	tmp = data->env;
+	while (data->env)
+	{
+		tmp = data->env;
+		free(tmp->var);
+		free(tmp->value);
+		data->env = tmp->next;
+		free(tmp);
+		tmp = data->env;
+	}
+	free(data->input);
+	free(data);
+	exit (1);
 }

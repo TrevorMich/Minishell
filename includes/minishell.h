@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/22 02:05:15 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/27 01:17:23 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,11 @@
 # include <stdio.h>
 # include <readline/history.h>
 # include <readline/readline.h>
+# include <signal.h>
 # include <string.h>
 # include "libft/libft.h"
-# include "errno.h"
+# include <sys/wait.h>
+# include <errno.h>
 
 # define MAX_TOKEN_SIZE 1024
 int		g_exit_status;
@@ -30,10 +32,32 @@ typedef struct s_env //check israel_README
 	int				sorted;
 }	t_env;
 
+typedef struct s_ins
+{
+	char			*str;
+	int				heredoc;
+	struct s_ins	*next;
+}					t_ins;
+
+typedef struct s_outs
+{
+	char			*str;
+	int				append;
+	struct s_outs	*next;
+}					t_outs;
+
 typedef struct s_cmdgroup
 {
-	char	**cmd;
-	struct s_cmdgroup *next;
+	char				**cmd;
+	t_ins				*ins;
+	t_outs				*outs;
+	char				*str;
+	int					pid;
+	int					outfile;
+	int					infile;
+	int					pipes[2];
+	struct s_cmdgroup	*prev;
+	struct s_cmdgroup	*next;
 
 }	t_cmdgroup;
 
@@ -89,7 +113,7 @@ typedef struct s_data //data struct
 */
 void	minishell(t_data *data);
 int		exec_minishell(t_data *data);
-
+void	execute(t_data *data);
 /**
  * UTILITIES
 */
@@ -100,13 +124,26 @@ void	clear(char **str);
 void	create_env_list(t_data *data, char **envp);
 void	insert_last(t_data *data, char *envp);
 int		ft_strcmp(const char *s1, const char *s2);
-void	free_all(t_data *data);
+void	exit_free(t_data *data);
 void	get_path(t_data *data);
 int		array_length(char **arr);
 void	print_welcome(int argc, char **argv);
 /**
+ * CMD INIT
+*/
+void		cmd_init(t_data *data);
+int			init_fds(t_data *data);
+t_token		*add_group(t_data *data, t_token *token);
+void		insert_end_ins(t_token *token, t_cmdgroup *group);
+void		insert_end_outs(t_token *token, t_cmdgroup *group);
+/**
+ * FDS INIT
+*/
+int	init_fds(t_data *data);
+/**
  * BUILTINS
 */
+int		the_builtins(t_cmdgroup *group);
 void	do_env(t_data *data, char **str);
 void	ft_env(t_data *data, char **str);
 void	cd(t_data *data, char **str);
@@ -130,7 +167,6 @@ int		is_update(t_data *data, char *tmp, char *value);
 int		check_error(char **var, char c);
 void	reset(t_data *data);
 char	*ft_strdup2(const char *str, int len);
-
 /**
  * PARSER ->
 */
@@ -203,4 +239,14 @@ void	print_err(char *err_msg, char *str);
 int		skip_spaces(char *input);
 int		skip_quotes(char *input);
 
+void	sig_heredoc(void);
+void	sig_parent_heredoc(void);
+void	ignore_ctrl_bslash(void);
+void	sig_noninteractive(void);
+void	free_exec(t_data *data);
+void	handler(t_cmdgroup *group);
+void	child_process(t_cmdgroup *group);
+void	ft_default(int stdin, int stdout);
+void	close_pipes(t_cmdgroup *group);
+void	parent_wait(t_cmdgroup *group);
 #endif
