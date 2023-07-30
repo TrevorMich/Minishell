@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 11:17:27 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/25 15:55:01 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:09:33 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ int	handle_infiles(t_cmdgroup *group)
 		if (group->infile == -1)
 		{
 			printf("minishell: %s: %s\n", ins->str, strerror(errno));
+			g_exit_status = 1;
 			return (1);
 		}
 		ins = ins->next;
@@ -104,14 +105,14 @@ int	init_fds(t_data *data)
 	t_cmdgroup	*group;
 
 	group = data->cmdgroup;
-	while(group)
+	while (group)
 	{
 		group->outfile = 1;
 		if (group->ins)
 			if (!handle_infiles(group))
 				return (0);
-			if (group->outs)
-				handle_outfiles(group);
+		if (group->outs)
+			handle_outfiles(group);
 		pipe(group->pipes);
 		group = group->next;
 	}

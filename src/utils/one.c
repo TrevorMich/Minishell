@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   one.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 15:48:08 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/21 20:29:09 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:21:05 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	pick_word(char *str, char *char_set)
 	return (i);
 }
 
-void print_welcome(int argc, char **argv)
+void	print_welcome(int argc, char **argv)
 {
 	if (argc > 1 || argv[1])
 		exit(printf("error: minishell can't take argument(s)\n") - 39);

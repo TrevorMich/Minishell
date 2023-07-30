@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/27 01:17:23 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/30 14:03:55 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,23 @@
 # define MINISHELL_H
 
 # include <stdio.h>
-# include <readline/history.h>
 # include <readline/readline.h>
+# include <readline/history.h>
+# include <sys/wait.h>
 # include <signal.h>
 # include <string.h>
-# include "libft/libft.h"
-# include <sys/wait.h>
 # include <errno.h>
+# include "libft/libft.h"
 
 # define MAX_TOKEN_SIZE 1024
+
 int		g_exit_status;
-typedef struct s_env //check israel_README
+
+typedef struct s_env
 {
-	char			*var; //variable name // change name to key
-	char			*value; //variable value
-	struct s_env	*next; //pointer to another t_env struct
+	char			*var;
+	char			*value;
+	struct s_env	*next;
 	int				sorted;
 }	t_env;
 
@@ -63,10 +65,10 @@ typedef struct s_cmdgroup
 
 typedef struct s_args
 {
-	char type;
-	char in_or_out;
-	int len;
-} t_args;
+	char	type;
+	char	in_or_out;
+	int		len;
+}	t_args;
 
 enum	e_token_types
 {
@@ -100,10 +102,10 @@ typedef struct s_token
 	struct s_token	*next;
 }					t_token;
 
-typedef struct s_data //data struct
+typedef struct s_data
 {
-	char		*input; //string from readline
-	t_env		*env;   //pointer to minishell environment variable struct
+	char		*input;
+	t_env		*env;
 	t_cmdgroup	*cmdgroup;
 	t_token		*token_lst;
 }	t_data;
@@ -131,15 +133,15 @@ void	print_welcome(int argc, char **argv);
 /**
  * CMD INIT
 */
-void		cmd_init(t_data *data);
-int			init_fds(t_data *data);
-t_token		*add_group(t_data *data, t_token *token);
-void		insert_end_ins(t_token *token, t_cmdgroup *group);
-void		insert_end_outs(t_token *token, t_cmdgroup *group);
+void	cmd_init(t_data *data);
+int		init_fds(t_data *data);
+t_token	*add_group(t_data *data, t_token *token);
+void	insert_end_ins(t_token *token, t_cmdgroup *group);
+void	insert_end_outs(t_token *token, t_cmdgroup *group);
 /**
  * FDS INIT
 */
-int	init_fds(t_data *data);
+int		init_fds(t_data *data);
 /**
  * BUILTINS
 */
@@ -151,12 +153,13 @@ void	cd_to_home(t_data *data);
 void	pwd(void);
 int		do_unset(t_data *data, char **var);
 void	do_echo(char **str);
-int		export(t_data *data, char **var);
+int		do_export(t_data *data, char **var);
 /**
  * BUILTIN UTILS
 */
 void	update_env_value(t_env *list, char *var, char *new_value);
 char	*get_current_dir(void);
+void	update_pwd(t_data *data);
 void	update_dir(t_data *data);
 void	update_oldpwd(t_data *data);
 void	print_export(t_data *data);
@@ -195,8 +198,8 @@ void	token_add_back(t_token **lst, t_token *new);
 t_token	*token_last(t_token *lst);
 void	remove_quotes(char *s);
 t_args	set_args(char type, char in_or_out, int len);
-t_token *set_token(char *input, int i, t_args args);
-void check_tokens(t_token *token);
+t_token	*set_token(char *input, int i, t_args args);
+void	check_tokens(t_token *token);
 /**
  * PARSER -> EXPANSION
 */
@@ -249,4 +252,5 @@ void	child_process(t_cmdgroup *group);
 void	ft_default(int stdin, int stdout);
 void	close_pipes(t_cmdgroup *group);
 void	parent_wait(t_cmdgroup *group);
+void	sig_interactive(void);
 #endif

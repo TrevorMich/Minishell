@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   redundant_quotes.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 16:19:51 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/16 14:45:23 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:29:20 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	remove_consecutive_quotes(char *input)
 {
-	int head;
-	int tail;
-	int open_quote;
+	int	head;
+	int	tail;
+	int	open_quote;
 
 	head = 0;
 	tail = 0;

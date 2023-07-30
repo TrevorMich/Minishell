@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 20:35:41 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/27 01:17:46 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/30 07:52:26 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ void	exec_cmds(t_data *data, t_cmdgroup *group)
 	str = group->cmd;
 	if (!ft_strcmp(str[0], "echo"))
 		do_echo(str);
-	if (!ft_strcmp(str[0], "cd")) 
+	if (!ft_strcmp(str[0], "cd"))
 		cd(data, str);
-	if (!ft_strcmp(str[0], "pwd")) 
+	if (!ft_strcmp(str[0], "pwd"))
 		pwd();
 	if (!ft_strcmp(str[0], "export"))
-		export(data, str);
+		do_export(data, str);
 	if (!ft_strcmp(str[0], "unset"))
 		do_unset(data, str);
 	if (!ft_strcmp(str[0], "env"))
@@ -71,8 +71,8 @@ void	handler(t_cmdgroup *group)
 			exit(1);
 		return ;
 	}
-	handle_in(group);
 	handle_out(group);
+	handle_in(group);
 }
 
 void	execute(t_data *data)

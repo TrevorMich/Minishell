@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 17:17:18 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/22 02:48:23 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:19:46 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	get_path(t_data *data)
 	t_env			*env;
 	char			**path;
 	t_cmdgroup		*group;
-	
+
 	group = data->cmdgroup;
 	path = NULL;
 	env = find_path(data);
@@ -48,7 +48,8 @@ void	add_path(t_cmdgroup *group, char **path)
 	char	**tmp_path;
 
 	i = 0;
-	if (!group->cmd || !group->cmd[0] || !access(group->cmd[0], X_OK))
+	if (!group->cmd || !group->cmd[0] || !access(group->cmd[0], X_OK)
+		|| the_builtins(group))
 		return ;
 	tmp_path = ft_calloc(array_length(path) + 1, sizeof(char *));
 	while (path[i])

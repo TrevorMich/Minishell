@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 20:30:19 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/27 01:18:29 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:08:37 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,10 @@ int	exec_minishell(t_data *data)
 	if (!ft_strcmp(data->input, "exit"))
 		exit_free(data);
 	if (input_error(data) == -1)
+	{
+		g_exit_status = 2;
 		return (-1);
+	}
 	parser(data);
 	cmd_init(data);
 	get_path(data);
@@ -32,7 +35,8 @@ void	minishell(t_data *data)
 {
 	while (1)
 	{
-		data->input = readline("\033[1;34m""minishell$: ""\033[0m"); //Collect input from user
+		sig_interactive();
+		data->input = readline("\033[1;34m""minishell$: ""\033[0m");
 		if (!data->input)
 		{
 			write(1, "exit\n", 5);
@@ -43,7 +47,6 @@ void	minishell(t_data *data)
 		{
 			add_history(data->input);
 			exec_minishell(data);
-			
 		}
 		else
 			free (data->input);

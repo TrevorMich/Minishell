@@ -6,12 +6,12 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 15:50:28 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/21 20:28:00 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/30 08:20:57 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
-
+char **get_key(char **var, char **key, char **value);
 int ft_strchr_int(const char *s, int c)
 {
 	int		i;
@@ -47,9 +47,9 @@ char **handle_value(char **var)
 
 char **handle_key(char **var, char **ptr)
 {
-	int i;
-	int j;
-	int k;
+	int		i;
+	int		j;
+	int		k;
 	char	**key;
 	char	*str;
 
@@ -70,7 +70,7 @@ char **handle_key(char **var, char **ptr)
 	return (key);
 }
 
-int	export(t_data *data, char **var)
+int	do_export(t_data *data, char **var)
 {
 	char	**value;
 	char	**key;
@@ -81,26 +81,27 @@ int	export(t_data *data, char **var)
 		return (print_export(data), reset(data), 1);
 	value = handle_value(var);
 	key = handle_key(var, value);
-	str = malloc((array_length(var) * sizeof(char **)) + 1);
+	// str = malloc((array_length(var) * sizeof(char **)) + 1);
 	if (!check_error(var, 'e'))
 		return (printf("minishell: export: '%s': not a valid identifier\n",
 				var[1]), 0);
 	i = 0;
+	str = get_key(var, key, value);
 	while (value[i] && key[i])
 	{
 		str[i] = ft_strjoin(key[i], value[i]);
 		i++;
 	}
-	i = 0;
-	while (key[i])
-	{
-		if (!is_update(data, key[i], value[i] + 1))
-			create_env_list(data, str);
-		i++;
-	}
-	clear(key);
-	clear(value);
-	clear(str);		//leak problem needs to be fixed
+	// i = 0;
+	// while (key[i])
+	// {
+	// 	if (!is_update(data, key[i], value[i] + 1))
+	// 		create_env_list(data, str);
+	// 	i++;
+	// }
+	// clear(key);
+	// clear(value);
+	// clear(str);
 	return (1);
 }
 

@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 18:55:23 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/26 08:22:36 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:19:15 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,16 @@ void	free_token_list(t_token **token_list)
 
 void	free_ins(t_ins **ptr)
 {
-		t_ins	*tmp;
+	t_ins	*tmp;
 
+	tmp = *ptr;
+	while (tmp)
+	{
+		free(tmp->str);
+		*ptr = tmp->next;
+		free(tmp);
 		tmp = *ptr;
-		while (tmp)
-		{
-			free(tmp->str);
-			*ptr = tmp->next;
-			free(tmp);
-			tmp = *ptr;
-		}
+	}
 }
 
 void	free_outs(t_outs **ptr)

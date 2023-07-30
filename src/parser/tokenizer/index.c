@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   index.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 08:46:37 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 16:47:09 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:28:54 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@
 // t_token **token_lst, char *input
 void	tokenizer(t_data *data)
 {
-	t_token	*token;
-	t_token **token_lst;
-	int		i;
-	char *input;
+	t_token		*token;
+	t_token		**token_lst;
+	int			i;
+	char		*input;
 
 	i = 0;
 	input = data->input;

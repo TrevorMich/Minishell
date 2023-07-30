@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 23:07:02 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/23 06:18:09 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 21:02:48 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	insert_end_ins(t_token *token, t_cmdgroup *group)
 	t_ins	*new;
 	t_ins	*tmp;
 
-	new = ft_calloc(1, sizeof(t_ins));
+	new = ft_calloc(sizeof(t_ins), 1);
 	new->str = ft_strdup(token->string);
 	new->heredoc = 0;
 	if (token->e_token_type == HERE_DOC)
@@ -63,8 +63,7 @@ t_token	*add_group(t_data *data, t_token *token)
 	t_cmdgroup	*tmp;
 
 	tok = token;
-	group = ft_calloc(1, sizeof(t_cmdgroup));
-	tmp = data->cmdgroup;
+	group = ft_calloc(sizeof(t_cmdgroup), 1);
 	while (tok && tok->e_token_type != PIPE)
 	{
 		if (tok->e_token_type == WORD)
@@ -91,9 +90,9 @@ void	cmd_init(t_data *data)
 	t_token	*token;
 
 	token = data->token_lst;
-	token = add_group(data, token);
 	while (token)
 	{
+		token = add_group(data, token);
 		if (token)
 			token = token->next;
 	}

@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   one.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 09:27:01 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/20 09:31:06 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:30:46 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../../includes/minishell.h"
 
-t_args set_args(char type, char in_or_out, int len)
+t_args	set_args(char type, char in_or_out, int len)
 {
-	t_args args;
+	t_args	args;
 
 	args.len = len;
 	args.in_or_out = in_or_out;
@@ -22,7 +22,7 @@ t_args set_args(char type, char in_or_out, int len)
 	return (args);
 }
 
-void handle_token_type(t_token **token, t_args args)
+void	handle_token_type(t_token **token, t_args args)
 {
 	if (args.type == 'w')
 		(*token)->e_token_type = WORD;
@@ -46,7 +46,7 @@ void	handle_quote_type(t_token **token, char input)
 		(*token)->e_quote_type = DBL_QUOT;
 }
 
-t_token *set_token(char *input, int i, t_args args)
+t_token	*set_token(char *input, int i, t_args args)
 {
 	t_token	*token;
 
@@ -61,6 +61,5 @@ t_token *set_token(char *input, int i, t_args args)
 	handle_token_type(&token, args);
 	handle_quote_type(&token, *input);
 	token->next = NULL;
-	// printf("string: %s\ntoken_type: %d\nquote_type: %d\n\n", token->string, token->e_token_type, token->e_quote_type);
 	return (token);
 }
