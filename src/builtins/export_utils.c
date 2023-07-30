@@ -6,11 +6,13 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 20:01:46 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/30 08:26:33 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/30 23:59:37 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
+
+int	check_var(char **var);
 
 void	reset(t_data *data)
 {
@@ -62,17 +64,30 @@ char	*ft_strdup2(const char *str, int len)
 	return (dup);
 }
 
-char	**get_key(char *var, char *key, char **value)
+int	get_key(t_data *data, char **var)
 {
-	int		i;
 	char	**str;
+	char	*ptr;
+	char	*key;
+	int		i;
 
-	i = 0;
-	str = malloc((array_length(var) * sizeof(char **)) + 1);
-	while (value[i] && key[i])
+	i = 1;
+	while (var[i])
 	{
-		str[i] = ft_strjoin(key[i], value[i]);
-		i++;
+		ptr = ft_strchr(var[i], '=');
+		if (!ptr)
+			i++;
+		else
+		{
+			if (!check_var(var))
+				return (0);
+			key = ft_strdup2(var[i], ptr - var[i]);
+			str = ft_split(var[i], '\0');
+			if (!is_update(data, key, ptr + 1))
+				create_env_list(data, str);
+			clear_export(key, str);
+			i++;
+		}
 	}
-	return (str);
+	return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/30 14:03:55 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/30 21:28:10 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -170,6 +170,8 @@ int		is_update(t_data *data, char *tmp, char *value);
 int		check_error(char **var, char c);
 void	reset(t_data *data);
 char	*ft_strdup2(const char *str, int len);
+void	clear_export(char *key, char **str);
+int		get_key(t_data *data, char **var);
 /**
  * PARSER ->
 */
