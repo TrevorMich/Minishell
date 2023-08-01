@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   envp_init.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 17:48:11 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/05 21:58:54 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 09:06:26 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

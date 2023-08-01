@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 12:03:55 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/29 21:57:10 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 09:14:15 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	the_builtins(t_cmdgroup *group)
 {
 	char	**str;
 
-	if (!group || !group->cmd[0])
+	if (!group->cmd || !group->cmd[0])
 		return (0);
 	str = group->cmd;
 	if (!ft_strcmp(str[0], "cd"))

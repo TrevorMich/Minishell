@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 17:17:18 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/29 22:19:46 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 09:36:48 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	add_path(t_cmdgroup *group, char **path)
 	tmp_path = ft_calloc(array_length(path) + 1, sizeof(char *));
 	while (path[i])
 	{
-		if (path[i][ft_strlen(path[i - 1])] != '/')
+		if (path[i][ft_strlen(path[i]) - 1] != '/')
 			tmp_path[i] = ft_strjoin2(path[i], group->cmd[0], '/');
 		else
 			tmp_path[i] = ft_strjoin(path[i], group->cmd[0]);
