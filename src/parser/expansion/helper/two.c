@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   two.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 11:44:16 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/21 11:44:39 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:24:31 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ void	handle_env_var(char **new_ptr, t_idx *idx, char *token, t_data *data)
 		copy_env_var_value(new_ptr, idx, env_var);
 	free(var);
 }
+
 void	copy_token_char(char **new_ptr, t_idx *idx, char c)
 {
 	(*new_ptr)[(idx->j)++] = c;

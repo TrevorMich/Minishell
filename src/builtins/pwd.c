@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 17:45:00 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/07 18:30:54 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:11:35 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	pwd(void)
 {
-	char *str;
+	char	*str;
 
 	str = ft_calloc(1000, sizeof(char));
 	printf("%s\n", getcwd(str, 100));

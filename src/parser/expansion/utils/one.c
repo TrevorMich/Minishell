@@ -6,22 +6,11 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 11:46:50 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/20 11:47:35 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 04:33:03 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../../includes/minishell.h"
-
-// int	dollar_in_str(char *s)
-// {
-// 	while (*s)
-// 	{
-// 		if (*s == '$')
-// 			return (1);
-// 		s++;
-// 	}
-// 	return (0);
-// }
 
 char	*get_exit_status(void)
 {

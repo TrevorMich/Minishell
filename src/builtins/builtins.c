@@ -6,13 +6,13 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 12:03:55 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/14 21:32:36 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 21:57:10 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
 
-int	isbuiltin(t_cmdgroup *group)
+int	the_builtins(t_cmdgroup *group)
 {
 	char	**str;
 

@@ -6,101 +6,43 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 15:50:28 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/21 20:28:00 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/30 23:59:34 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
 
-int ft_strchr_int(const char *s, int c)
+int	check_var(char **var)
 {
-	int		i;
-
-	i = 0;
-	if (!s || !c)
-		return (-1);
-	while (s[i] != 0 && s[i] != (char)c)
-		i++;
-	if (s[i] == (char)c)
-		return (i);
-	return (-1);
-}
-
-char **handle_value(char **var)
-{
-	char	**val;
-	char 	*str;
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 
 	i = 1;
 	j = 0;
-	val = malloc((array_length(var) * sizeof(char **)) + 1);
 	while (var[i])
 	{
-		str = ft_strchr(var[i++], '=');
-		if (str)
-			val[j++] = str;
-	}
-	return (val);
-}
-
-char **handle_key(char **var, char **ptr)
-{
-	int i;
-	int j;
-	int k;
-	char	**key;
-	char	*str;
-
-	i = 0;
-	j = 0;
-	k = 0;
-	key = malloc((array_length(var) * sizeof(char **)) + 1);
-	while (var[i])
-	{
-		str = ft_strchr(var[i], '=');
-		if (str)
+		j = 0;
+		while (var[i][j])
 		{
-			key[j++] = ft_strdup2(var[i], ptr[k] - var[i]);
-			k++;
+			if (var[i][0] == '=' || var[i][j] == '?' || var[i][j] == '-'
+				|| var[i][j] == '.')
+			{
+				g_exit_status = 1;
+				return (printf("zsh: no matches found: '%s'\n", var[i]), 0);
+			}
+			j++;
 		}
 		i++;
 	}
-	return (key);
+	return (1);
 }
 
-int	export(t_data *data, char **var)
+int	do_export(t_data *data, char **var)
 {
-	char	**value;
-	char	**key;
-	char	**str;
-	int 	i;
-	
 	if (array_length(var) == 1)
 		return (print_export(data), reset(data), 1);
-	value = handle_value(var);
-	key = handle_key(var, value);
-	str = malloc((array_length(var) * sizeof(char **)) + 1);
-	if (!check_error(var, 'e'))
-		return (printf("minishell: export: '%s': not a valid identifier\n",
-				var[1]), 0);
-	i = 0;
-	while (value[i] && key[i])
-	{
-		str[i] = ft_strjoin(key[i], value[i]);
-		i++;
-	}
-	i = 0;
-	while (key[i])
-	{
-		if (!is_update(data, key[i], value[i] + 1))
-			create_env_list(data, str);
-		i++;
-	}
-	clear(key);
-	clear(value);
-	clear(str);		//leak problem needs to be fixed
+	if (!get_key(data, var))
+		return (0);
 	return (1);
 }
 
@@ -160,5 +102,5 @@ t_env	*set_min(t_data *data)
 			return (tmp);
 		tmp = tmp->next;
 	}
-	return NULL;
+	return (NULL);
 }

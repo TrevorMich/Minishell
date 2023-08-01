@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   export_utils.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 20:01:46 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 20:17:55 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 04:29:34 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ int	smaller(char *str1, char *str2)
 
 char	*ft_strdup2(const char *str, int len)
 {
-	int	i;
-	char *dup;
+	int		i;
+	char	*dup;
 
 	i = 0;
 	dup = ft_calloc(len + 1, sizeof(char *));
@@ -60,4 +60,32 @@ char	*ft_strdup2(const char *str, int len)
 	}
 	dup[i] = '\0';
 	return (dup);
+}
+
+int	get_key(t_data *data, char **var)
+{
+	char	**str;
+	char	*ptr;
+	char	*key;
+	int		i;
+
+	i = 1;
+	while (var[i])
+	{
+		ptr = ft_strchr(var[i], '=');
+		if (!ptr)
+			i++;
+		else
+		{
+			if (!check_var(var))
+				return (0);
+			key = ft_strdup2(var[i], ptr - var[i]);
+			str = ft_split(var[i], '\0');
+			if (!is_update(data, key, ptr + 1))
+				create_env_list(data, str);
+			clear_export(key, str);
+			i++;
+		}
+	}
+	return (1);
 }

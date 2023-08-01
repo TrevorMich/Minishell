@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 10:27:41 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/18 19:15:27 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:16:56 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ int	do_unset(t_data *data, char **var)
 
 	ptr = data->env;
 	if (!check_error(var, 'u'))
-		return (printf("minishell: unset: '%s': not a valid identifier\n", var[1]), 0);
+		return (printf("minishell: unset: '%s': not a valid identifier\n",
+				var[1]), 0);
 	if (!ft_strcmp(ptr->var, var[1]))
 	{
 		data->env = ptr->next;
@@ -40,26 +41,27 @@ int	do_unset(t_data *data, char **var)
 
 int	check_error(char **var, char c)
 {
-	int	i;
-	char *str;
+	int		i;
+	char	*str;
 
 	i = 0;
 	str = var[1];
-
 	if (!str)
 		return (0);
 	if (c == 'u')
 	{
 		while (str[i])
 		{
-			if (str[i] == '+' || str[i] == '-' || str[i] == '=' || str[i] =='.' || str[i] == '?')
+			if (str[i] == '+' || str[i] == '-' || str[i] == '=' || str[i] == '.'
+				|| str[i] == '?')
 				return (0);
 			i++;
 		}
 	}
 	while (str[i])
 	{
-		if (str[0] == '=' ||str[i] == '+' || str[i] == '-' || str[i] =='.' || str[i] == '?')
+		if (str[0] == '=' || str[i] == '+' || str[i] == '-' || str[i] == '.'
+			|| str[i] == '?')
 			return (0);
 		i++;
 	}

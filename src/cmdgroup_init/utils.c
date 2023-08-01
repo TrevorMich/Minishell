@@ -6,7 +6,7 @@
 /*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 18:49:50 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/19 05:50:35 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/07/22 02:05:17 by ioduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,26 +22,29 @@ int	ft_strcmp(const char *s1, const char *s2)
 	return (s1[i] - s2[i]);
 }
 
-char	*ft_strjoin2(char const	*s1, char const	*s2, char c)
+char	*ft_strjoin2(char *s1, char *s2, char c)
 {
-	size_t	size;
+	char	*newstr;
 	size_t	i;
 	size_t	j;
-	char	*dst;
 
 	i = 0;
 	j = 0;
-	size = ft_strlen(s1) + ft_strlen(s2) + 2;
-	dst = malloc(sizeof(char) * size);
+	newstr = malloc(ft_strlen(s1) + ft_strlen(s2) + 2);
+	if (!newstr)
+		return (NULL);
 	while (s1 && s1[i])
 	{
-		dst[i] = s1[i];
+		newstr[i] = s1[i];
 		i++;
 	}
-	dst[i++] = c;
+	newstr[i++] = c;
 	while (s2[j])
-		dst[i++] = s2[j++];
-	return (dst);
+		newstr[i++] = s2[j++];
+	newstr[i] = '\0';
+	if (s1 && c == '\n')
+		free(s1);
+	return (newstr);
 }
 
 void	clear(char **str)
