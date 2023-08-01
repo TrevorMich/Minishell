@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   export_utils.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 20:01:46 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/30 23:59:37 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 04:29:34 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
-
-int	check_var(char **var);
 
 void	reset(t_data *data)
 {

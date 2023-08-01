@@ -6,35 +6,11 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 16:28:27 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/19 19:34:44 by doduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 04:52:35 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
-
-/// @brief test commands
-// "echo" dre
-// </dev/stdin tr -d 'e' | ls
-// cat | uname -a
-// echo "$(cat Makefile)"
-// ls > file
-// cat < ls
-// exec 5<> file
-// ps -ef | grep systemd | awk '{ print $2 }'
-// ls * | sort > file
-// ls -la | grep a | tr 'a-z' 'A-Z'
-// 
-// cat << EOF > file
-// cat file
-// rm file
-// 
-// ls | rev > file
-// cat file
-// rev file | cat
-// rm file
-//
-// read a b <<< "Sysadmin Enable"
-// echo $b <-> $a 
 
 int	input_error(t_data *data)
 {

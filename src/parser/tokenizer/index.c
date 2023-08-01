@@ -3,20 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   index.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 08:46:37 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/29 22:28:54 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 04:47:43 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../includes/minishell.h"
 
-///@test
-// echo dre, echo "dre", echo 'dre'
-// echo drey > readme, echo "drey" > readme, echo 'drey' > readme
-// echo < readme, echo < readme, echo < readme
-// t_token **token_lst, char *input
 void	tokenizer(t_data *data)
 {
 	t_token		*token;

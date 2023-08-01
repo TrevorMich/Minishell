@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 09:02:03 by ioduwole          #+#    #+#             */
-/*   Updated: 2023/07/30 21:28:10 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 04:54:35 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -202,6 +202,7 @@ void	remove_quotes(char *s);
 t_args	set_args(char type, char in_or_out, int len);
 t_token	*set_token(char *input, int i, t_args args);
 void	check_tokens(t_token *token);
+int		check_var(char **var);
 /**
  * PARSER -> EXPANSION
 */
@@ -211,7 +212,6 @@ void	process_expansion(char *token, t_data *data, t_idx *idx, char **exp);
 /**
  * PARSER -> EXPANSION -> UTILS
 */
-// int	dollar_in_str(char *s);
 /**
  * PARSER -> EXPANSION -> HELPER
 */

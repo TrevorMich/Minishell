@@ -3,27 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   one.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ioduwole <ioduwole@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 11:40:46 by doduwole          #+#    #+#             */
-/*   Updated: 2023/07/29 22:30:17 by ioduwole         ###   ########.fr       */
+/*   Updated: 2023/08/01 04:31:38 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../../includes/minishell.h"
-
-// "$@"	is an array-like construct of all positional parameters,
-//{$1, $2, $3 ...}.
-// "$*"	is the IFS expansion of all positional parameters, $1 $2 $3 ....
-// $#	is the number of positional parameters.
-// $-	current options set for the shell.
-// $$	pid of the current shell (not subshell).
-// $_	most recent parameter (or the abs path of the command to start the
-//current shell immediately after startup).
-// $IFS	is the (input) field separator.
-// $?	is the most recent foreground pipeline exit status.
-// $!	is the PID of the most recent background command.
-// $0	is the name of the shell or shell script.
 
 void	process_expansion(char *token, t_data *data, t_idx *idx, char **exp)
 {

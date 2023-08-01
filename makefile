@@ -6,7 +6,7 @@
 #    By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/21 09:00:17 by ioduwole          #+#    #+#              #
-#    Updated: 2023/07/20 09:29:19 by doduwole         ###   ########.fr        #
+#    Updated: 2023/08/01 04:50:27 by doduwole         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ NONE='\033[0m'
 GREEN='\033[32m'
 GRAY='\033[2;37m'
 CURSIVE='\033[3m'
+WARNING='\033[33m'
 
 UNAME := $(shell uname -m)
 
@@ -43,6 +44,7 @@ all: $(NAME)
 $(NAME): $(SRC) $(LIBFT)
 	@$(CC) $(CFLAGS) $(RD_LIB) $(SRC) $(LIBFT) -o $@
 	@echo $(GREEN)"- Compiled -"$(NONE)
+	@echo $(WARNING) "RUN " $(NONE) "./minishell"
 
 $(LIBFT):
 	@make all -C $(LIB_DIR)
